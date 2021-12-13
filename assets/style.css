@@ -1,3 +1,54 @@
 body{
-  background-color: purple;
+  background-color: #364F6B;
+  /* box-shadow: 0px 0px 25px 10px #b026ff; */
+}
+
+#btnwrapper{
+  display: grid;
+  grid-template-areas:
+  "btn1 btn2"
+  "btn3 btn4"
+  ;
+}
+
+.btn{
+  width: 20vw;
+  height: 20vw;
+  border: none;
+  margin: 20px;
+  box-shadow: 0px 0px 25px 10px #b026ff;
+  transition: .5s;
+}
+
+.btn:hover{
+  box-shadow: none;
+  transition: .5s;
+}
+
+#btn1{
+  background-color: #ff1818;
+  border-radius: 100% 25px 25px 25px;
+  grid-area: btn1;
+  justify-self: right;
+}
+
+#btn2{
+  background-color: #39FF14;
+  border-radius: 25px 100% 25px 25px;
+  grid-area: btn2;
+  justify-self: left;
+}
+
+#btn3{
+  background-color: #1F51FF;
+  border-radius: 25px 25px 25px 100%;
+  grid-area: btn3;
+  justify-self: right;
+}
+
+#btn4{
+  background-color: #FFF300;
+  border-radius: 25px 25px 100% 25px;
+  grid-area: btn4;
+  justify-self: left;
 }
