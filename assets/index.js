@@ -27,7 +27,18 @@ function clickFour(){
   console.log(4);
 }
 
+function randomSequence(){
+  gameChoice.push(Math.floor((Math.random() * 4) + 1))
+}
+
+function startGame(){
+  randomSequence();
+  playGameChoice();
+}
+
 one.onclick = clickOne;
 two.onclick = clickTwo;
 three.onclick = clickThree;
 four.onclick = clickFour;
+
+start.onclick = startGame;
