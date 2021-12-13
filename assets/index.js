@@ -5,3 +5,4 @@ let one = document.getElementById("btn1");
 let two = document.getElementById("btn2");
 let three = document.getElementById("btn3");
 let four = document.getElementById("btn4");
+let start = document.getElementById("startbtn");
