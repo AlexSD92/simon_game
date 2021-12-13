@@ -3,6 +3,8 @@ body{
   /* box-shadow: 0px 0px 25px 10px #b026ff; */
 }
 
+/* ↓ styling for simon game buttons ↓ */
+
 #btnwrapper{
   display: grid;
   grid-template-areas:
@@ -52,3 +54,5 @@ body{
   grid-area: btn4;
   justify-self: left;
 }
+
+/* ↑ styling for simon game buttons ↑ */
