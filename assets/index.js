@@ -28,7 +28,53 @@ function clickFour(){
 }
 
 function randomSequence(){
-  gameChoice.push(Math.floor((Math.random() * 4) + 1))
+  gameChoice.push(Math.floor((Math.random() * 4) + 1));
+}
+
+function playGameChoice(){
+
+    for (game of gameChoice){
+
+      switch (game) {
+
+          case 1:
+          setTimeout(() => {
+          one.classList.add("clicked");
+          setTimeout(() => {one.classList.remove("clicked")}, 500);
+          // setTimeout(one.classList.remove("clicked"), 1000);
+          }, 500);
+          break;
+
+          case 2:
+          setTimeout(() => {
+          two.classList.add("clicked");
+          setTimeout(() => {two.classList.remove("clicked")}, 500);
+          // setTimeout(two.classList.remove("clicked"), 1000);
+          }, 500);
+          break;
+
+
+          case 3:
+          setTimeout(() => {
+          three.classList.add("clicked");
+          setTimeout(() => {three.classList.remove("clicked")}, 500);
+          // setTimeout(three.classList.remove("clicked"), 1000);
+          }, 500);
+          break;
+
+
+          case 4:
+          setTimeout(() => {
+          four.classList.add("clicked");
+          setTimeout(() => {four.classList.remove("clicked")}, 500);
+          // setTimeout(four.classList.remove("clicked"), 1000);
+          }, 500);
+          break;
+
+      }
+
+    }
+
 }
 
 function startGame(){
