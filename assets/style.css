@@ -22,7 +22,7 @@ body{
   transition: .5s;
 }
 
-.pressed{
+.clicked{
   box-shadow: none;
   transition: .5s;
 }
