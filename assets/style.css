@@ -22,7 +22,7 @@ body{
   transition: .5s;
 }
 
-.btn:hover{
+.pressed{
   box-shadow: none;
   transition: .5s;
 }
