@@ -15,6 +15,7 @@ body{
   grid-template-areas:
   "header"
   "btnwrapper"
+  "startbtn"
   "footer"
   ;
 }
@@ -22,22 +23,49 @@ body{
 header{
   display: grid;
   grid-template-areas:
-  "logo navbar"
+  "logo"
+  "navbar"
   ;
   grid-area: header;
 }
 
 #logo{
   grid-area: logo;
+  justify-self: center;
 }
 
 #navbar{
   grid-area: navbar;
 }
 
+.unlist{
+  list-style: none;
+  justify-self: center;
+  margin: 0;
+  padding: 0;
+}
+
+.unlist li{
+  display: inline;
+}
+
+.unlist a{
+  color: black;
+  text-decoration: none;
+}
+
 footer{
   grid-area: footer;
+  justify-self: center;
 }
+
+#startbtn{
+  grid-area: startbtn;
+  width: 50px;
+  height: 50px;
+  justify-self: center;
+}
+
 
 #btnwrapper{
   display: grid;
