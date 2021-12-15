@@ -13,8 +13,13 @@ function randomSequence(){
   gameChoice.push(Math.floor((Math.random() * 4) + 1));
 }
 
+function gameOver(){
+  userChoice = [];
+  gameChoice = [];
+}
+
 function testChoice(){
-  for(i=0; i<userChoice.length; i++){
+  for(i=0; i<=userChoice.length; i++){
     if(userChoice[i] === gameChoice[i] && userChoice.length < gameChoice.length){
       console.log("win");
     }
@@ -22,7 +27,7 @@ function testChoice(){
       userChoice = [];
       setTimeout(() => {playGameChoice()}, 1000);
     }
-    else{console.log("You Lose")}
+    else{console.log("You Lose"); gameOver();}
   }
 }
 
@@ -115,7 +120,9 @@ function playGameChoice(){
 }
 
 function startGame(){
-  playGameChoice();
+  setTimeout(() => {
+    playGameChoice();
+  }, 1000)
 }
 
 start.onclick = startGame;
