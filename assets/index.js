@@ -26,29 +26,40 @@ function testChoice(){
   }
 }
 
+function animate(button){
+  setTimeout(() => {
+    button.classList.add("clicked");
+    setTimeout(() => {button.classList.remove("clicked")}, 200);
+  }, 100);
+}
+
 function waitUserChoice(){
 
   function clickOne(){
     userChoice.push(1);
     console.log(1);
+    animate(one)
     testChoice();
   }
 
   function clickTwo(){
     userChoice.push(2);
     console.log(2);
+    animate(two);
     testChoice();
   }
 
   function clickThree(){
     userChoice.push(3);
     console.log(3);
+    animate(three);
     testChoice();
   }
 
   function clickFour(){
     userChoice.push(4)
     console.log(4);
+    animate(four);
     testChoice();
   }
 
