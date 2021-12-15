@@ -20,7 +20,7 @@ function testChoice(){
     }
     else if(userChoice[i] === gameChoice[i] && userChoice.length === gameChoice.length){
       userChoice = [];
-      playGameChoice();
+      setTimeout(() => {playGameChoice()}, 1000);
     }
     else{console.log("You Lose")}
   }
