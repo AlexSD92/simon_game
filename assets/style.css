@@ -10,12 +10,42 @@ body{
 
 /* ↓ styling for simon game buttons ↓ */
 
+#parentgrid{
+  display: grid;
+  grid-template-areas:
+  "header"
+  "btnwrapper"
+  "footer"
+  ;
+}
+
+header{
+  display: grid;
+  grid-template-areas:
+  "logo navbar"
+  ;
+  grid-area: header;
+}
+
+#logo{
+  grid-area: logo;
+}
+
+#navbar{
+  grid-area: navbar;
+}
+
+footer{
+  grid-area: footer;
+}
+
 #btnwrapper{
   display: grid;
   grid-template-areas:
   "btn1 btn2"
   "btn3 btn4"
   ;
+  grid-area: btnwrapper;
 }
 
 .btn{
