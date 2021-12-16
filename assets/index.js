@@ -1,12 +1,16 @@
 userChoice = [];
 gameChoice = [];
 choices = [1,2,3,4];
-// xxx = true;
 let one = document.getElementById("btn1");
 let two = document.getElementById("btn2");
 let three = document.getElementById("btn3");
 let four = document.getElementById("btn4");
 let start = document.getElementById("startbtn");
+let btn1Sound = new Audio("assets/sounds/btn1Sound.mp3");
+let btn2Sound = new Audio("assets/sounds/btn2Sound.mp3");
+let btn3Sound = new Audio("assets/sounds/btn3Sound.mp3");
+let btn4Sound = new Audio("assets/sounds/btn4Sound.mp3");
+let gameOverSound = new Audio("assets/sounds/gameOverSound.mp3");
 
 
 function randomSequence(){ // generates random number between 1 and 4 and pushes it to gameChoice array
@@ -16,18 +20,21 @@ function randomSequence(){ // generates random number between 1 and 4 and pushes
 function gameOver(){ // ends the game, activated if user makes an incorrect choice; empties both userChoice and gameChoice arrays
   userChoice = [];
   gameChoice = [];
+  // gameOverSound.play();
 }
 
 function testChoice(){ // tests array equality by iteration
   for(i=0; i<=userChoice.length; i++){ // iterates through array and compares userChoice to gameChoice by individual array objects
-    if(userChoice[i] === gameChoice[i] && userChoice.length < gameChoice.length){
+    if(userChoice[i] === gameChoice.slice(0, userChoice.length)[i] && userChoice.length < gameChoice.length){
       console.log("win");
     }
     else if(userChoice[i] === gameChoice[i] && userChoice.length === gameChoice.length){ // calls playGameChoice after one second to initial game turn
+      setTimeout(() => {playGameChoice()}, 2000);
       userChoice = [];
-      setTimeout(() => {playGameChoice()}, 1000);
     }
-    else{console.log("You Lose"); gameOver();} // if user choice is incorrect at any stage, gameOver
+    else{ // if user choice is incorrect at any stage, gameOver
+      gameOver();
+    }
   }
 }
 
@@ -44,6 +51,7 @@ function waitUserChoice(){ // waits for the user choice, calls testChoice() on e
     userChoice.push(1);
     console.log(1);
     animate(one)
+    btn1Sound.play();
     testChoice();
   }
 
@@ -51,6 +59,7 @@ function waitUserChoice(){ // waits for the user choice, calls testChoice() on e
     userChoice.push(2);
     console.log(2);
     animate(two);
+    btn2Sound.play();
     testChoice();
   }
 
@@ -58,6 +67,7 @@ function waitUserChoice(){ // waits for the user choice, calls testChoice() on e
     userChoice.push(3);
     console.log(3);
     animate(three);
+    btn3Sound.play();
     testChoice();
   }
 
@@ -65,6 +75,7 @@ function waitUserChoice(){ // waits for the user choice, calls testChoice() on e
     userChoice.push(4)
     console.log(4);
     animate(four);
+    btn4Sound.play();
     testChoice();
   }
 
@@ -86,6 +97,7 @@ function playGameChoice(){ // plays the games turn, animations in place for each
         case 1:
         setTimeout(() => {
           one.classList.add("clicked");
+          btn1Sound.play();
           setTimeout(() => {one.classList.remove("clicked")}, 500);
         }, i*1000);
         break;
@@ -93,6 +105,7 @@ function playGameChoice(){ // plays the games turn, animations in place for each
         case 2:
         setTimeout(() => {
           two.classList.add("clicked");
+          btn2Sound.play();
           setTimeout(() => {two.classList.remove("clicked")}, 500);
         }, i*1000);
         break;
@@ -100,6 +113,7 @@ function playGameChoice(){ // plays the games turn, animations in place for each
         case 3:
         setTimeout(() => {
           three.classList.add("clicked");
+          btn3Sound.play();
           setTimeout(() => {three.classList.remove("clicked")}, 500);
         }, i*1000);
         break;
@@ -107,6 +121,7 @@ function playGameChoice(){ // plays the games turn, animations in place for each
         case 4:
         setTimeout(() => {
           four.classList.add("clicked");
+          btn4Sound.play();
           setTimeout(() => {four.classList.remove("clicked")}, 500);
         }, i*1000);
         break;
