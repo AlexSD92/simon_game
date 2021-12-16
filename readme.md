@@ -63,7 +63,7 @@
 
 ## Strategy
 
-Design a site with a focused style that does not distract from the Simon Says game. Consistent fonts, feedback sounds and colors will be used throughout the design for a visual appea and simplicity.
+Design a site with a focused style that does not distract from the Simon Says game. Consistent fonts, feedback sounds and colors will be used throughout the design for a visual appeal and simplicity.
 
 ## Scope
 
@@ -131,6 +131,7 @@ The following fonts were used from [Google Fonts](https://fonts.google.com/?cate
 ## Bugs & Fixes
 
 15/12/2021 - Bug identified where repeating objects in playGameChoice weren't animating correctly. This was fixed by adjusting the setTimeout to i*1000 to create delay in the iteration of the gameChoice array.
+16/12/2021 - Bug identified where testChoice() kept defaulting to the else statement, the for loop needed adjusting so that it iterated through a slice of gameChoice that was equivalent to the length of userChoice. In code, it meant changing userChoice[i] === gameChoice[i] to userChoice[i] === gameChoice.slice(0, userChoice.length)[i].
 
 # Deployment
 
