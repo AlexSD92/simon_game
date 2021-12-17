@@ -6,7 +6,6 @@ let two = document.getElementById("btn2");
 let three = document.getElementById("btn3");
 let four = document.getElementById("btn4");
 let start = document.getElementById("startbtn");
-let x = new Boolean(true);
 let btn1Sound = new Audio("assets/sounds/btn1Sound.mp3");
 let btn2Sound = new Audio("assets/sounds/btn2Sound.mp3");
 let btn3Sound = new Audio("assets/sounds/btn3Sound.mp3");
@@ -21,25 +20,32 @@ function randomSequence(){ // generates random number between 1 and 4 and pushes
 function gameOver(){ // ends the game, activated if user makes an incorrect choice; empties both userChoice and gameChoice arrays
   userChoice = [];
   gameChoice = [];
-  // gameOverSound.play();
+  gameOverSound.play();
 }
 
 function testChoice(){ // tests array equality by iteration
   for(i=0; i<=userChoice.length; i++){ // iterates through array and compares userChoice to gameChoice by individual array objects
-    if(userChoice.length < gameChoice.length){
-      if(userChoice[i] === gameChoice.slice(0, userChoice.length)[i]){
-        console.log("win");
-      }
-      else{console.log("lose"); x = Boolean(false);}
+
+    if(userChoice.length === gameChoice.length && userChoice[i] !== gameChoice[i]){
+      gameOver();
+      console.log("lose");
     }
-    else if(userChoice.length === gameChoice.length){
-      if(userChoice[i] === gameChoice.slice(0, userChoice.length)[i]){
-        console.log("win");
-        userChoice = [];
-        setTimeout(() => {playGameChoice()}, 2000);
-      }
-      else{console.log("lose"); x = Boolean(false);}
+
+    else if(userChoice.length < gameChoice.length && userChoice[i] !== gameChoice.slice(0, userChoice.length)[i]){
+      gameOver();
+      console.log("lose");
     }
+
+    else if(userChoice.length === gameChoice.length && userChoice[i] === gameChoice[i]){
+      console.log("win");
+      userChoice = [];
+      setTimeout(() => {playGameChoice();}, 2000);
+    }
+
+    else if(userChoice.length < gameChoice.length && userChoice[i] === gameChoice.slice(0, userChoice.length)[i]){
+      console.log("win");
+    }
+
   }
 }
 
@@ -52,16 +58,14 @@ function animate(button){ // created for consistent code and animaation, used sp
 
 function waitUserChoice(){ // waits for the user choice, calls testChoice() on each user click of simon button and tests userChoice against gameChoice
 
-while(x === true){
   testChoice();
-}
 
   function clickOne(){
     userChoice.push(1);
     console.log(1);
     animate(one)
     btn1Sound.play();
-    // testChoice();
+    testChoice();
   }
 
   function clickTwo(){
@@ -69,7 +73,7 @@ while(x === true){
     console.log(2);
     animate(two);
     btn2Sound.play();
-    // testChoice();
+    testChoice();
   }
 
   function clickThree(){
@@ -77,7 +81,7 @@ while(x === true){
     console.log(3);
     animate(three);
     btn3Sound.play();
-    // testChoice();
+    testChoice();
   }
 
   function clickFour(){
@@ -85,13 +89,14 @@ while(x === true){
     console.log(4);
     animate(four);
     btn4Sound.play();
-    // testChoice();
+    testChoice();
   }
 
   one.onclick = clickOne;
   two.onclick = clickTwo;
   three.onclick = clickThree;
   four.onclick = clickFour;
+
 
 }
 
