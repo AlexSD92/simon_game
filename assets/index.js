@@ -1,3 +1,5 @@
+// https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68
+
 userChoice = [];
 gameChoice = [];
 choices = [1,2,3,4];
@@ -11,6 +13,7 @@ let btn2Sound = new Audio("assets/sounds/btn2Sound.mp3");
 let btn3Sound = new Audio("assets/sounds/btn3Sound.mp3");
 let btn4Sound = new Audio("assets/sounds/btn4Sound.mp3");
 let gameOverSound = new Audio("assets/sounds/gameOverSound.mp3");
+let gameOverMsg = document.getElementById("gameover");
 
 
 function randomSequence(){ // generates random number between 1 and 4 and pushes it to gameChoice array
@@ -18,6 +21,11 @@ function randomSequence(){ // generates random number between 1 and 4 and pushes
 }
 
 function gameOver(){ // ends the game, activated if user makes an incorrect choice; empties both userChoice and gameChoice arrays
+  gameOverMsg.classList.remove("hidden");
+  one.classList.add("hidden");
+  two.classList.add("hidden");
+  three.classList.add("hidden");
+  four.classList.add("hidden");
   userChoice = [];
   gameChoice = [];
   gameOverSound.play();
