@@ -3,6 +3,7 @@
 userChoice = [];
 gameChoice = [];
 choices = [1,2,3,4];
+let level = 1;
 let one = document.getElementById("btn1");
 let two = document.getElementById("btn2");
 let three = document.getElementById("btn3");
@@ -26,36 +27,37 @@ function gameOver(){ // ends the game, activated if user makes an incorrect choi
   two.classList.add("hidden");
   three.classList.add("hidden");
   four.classList.add("hidden");
-  userChoice = [];
-  gameChoice = [];
+  // userChoice = [];
+  // gameChoice = [];
   gameOverSound.play();
 }
 
 function testChoice(){ // tests array equality by iteration
-  for(i=0; i<=userChoice.length; i++){ // iterates through array and compares userChoice to gameChoice by individual array objects
 
-    if(userChoice.length === gameChoice.length && userChoice[i] !== gameChoice[i]){
-      gameOver();
-      console.log("lose");
-    }
+  for (i=0;i<userChoice.length;i++){
+      if(userChoice.length < gameChoice.length){
+          if(userChoice[i] === gameChoice[i]){
+              console.log("win");
+          }
+          else if(userChoice[i] !== gameChoice[i]){
+              console.log("<game over");
+              gameOver();
+          }
+      }
+      else if(userChoice.length === gameChoice.length){
+          if(userChoice[i] === gameChoice[i]){
+              console.log("next round");
 
-    else if(userChoice.length < gameChoice.length && userChoice[i] !== gameChoice.slice(0, userChoice.length)[i]){
-      gameOver();
-      console.log("lose");
-    }
-
-    else if(userChoice.length === gameChoice.length && userChoice[i] === gameChoice[i]){
-      console.log("win");
-      userChoice = [];
-      setTimeout(() => {playGameChoice();}, 2000);
-    }
-
-    else if(userChoice.length < gameChoice.length && userChoice[i] === gameChoice.slice(0, userChoice.length)[i]){
-      console.log("win");
-    }
-
+          }
+          else if(userChoice[i] !== gameChoice[i]){
+              console.log("=game over");
+              gameOver();
+          }
+      }
   }
 }
+
+
 
 function animate(button){ // created for consistent code and animaation, used specifically for user clicks of simon buttons
   setTimeout(() => {
@@ -66,7 +68,7 @@ function animate(button){ // created for consistent code and animaation, used sp
 
 function waitUserChoice(){ // waits for the user choice, calls testChoice() on each user click of simon button and tests userChoice against gameChoice
 
-  testChoice();
+  userChoice = [];
 
   function clickOne(){
     userChoice.push(1);
@@ -104,7 +106,6 @@ function waitUserChoice(){ // waits for the user choice, calls testChoice() on e
   two.onclick = clickTwo;
   three.onclick = clickThree;
   four.onclick = clickFour;
-
 
 }
 
