@@ -43,7 +43,7 @@ header{
   grid-area: logo;
   /* justify-self: center; */
   font-family: 'Permanent Marker', cursive;
-  color: #000000;
+  color: #DDA0DD;
   font-size: 5rem;
   margin: 0;
   padding: 0;
@@ -70,7 +70,7 @@ header{
 }
 
 .unlist a{
-  color: #000000;
+  color: #DDA0DD;
   text-decoration: none;
   font-size: 2rem;
   padding: 1% 2%;
@@ -114,7 +114,7 @@ footer{
   height: 17.5vw;
   border: none;
   margin: 20px;
-  box-shadow: 0px 0px 25px 10px #b026ff;
+  box-shadow: 0px 0px 25px 10px #808080;
   transition: .5s;
 }
 
