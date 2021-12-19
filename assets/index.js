@@ -16,7 +16,6 @@ let btn4Sound = new Audio("assets/sounds/btn4Sound.mp3");
 let gameOverSound = new Audio("assets/sounds/gameOverSound.mp3");
 let gameOverMsg = document.getElementById("gameover");
 
-
 function randomSequence(){ // generates random number between 1 and 4 and pushes it to gameChoice array
   gameChoice.push(Math.floor((Math.random() * 4) + 1));
 }
@@ -36,78 +35,28 @@ function testChoice(){ // tests array equality by iteration
 
   for (i=0;i<userChoice.length;i++){
       if(userChoice.length < gameChoice.length){
-          if(userChoice[i] === gameChoice[i]){
-              console.log("win");
+        if(userChoice[i] === gameChoice[i]){
+            console.log("win");
+        }
+        else if(userChoice[i] !== gameChoice[i]){
+          console.log("<game over");
+          gameOver();
+        }
+      }
+      else if(userChoice.length >= gameChoice.length){
+        if(userChoice[i] !== gameChoice[i]){
+            console.log("=game over");
+            gameOver();
           }
-          else if(userChoice[i] !== gameChoice[i]){
-              console.log("<game over");
-              gameOver();
+        else if(userChoice[i] === gameChoice[i]){
+            console.log("next round");
+            userChoice = [];
+            setTimeout(()=>{return playGameChoice();},2000);
           }
       }
-      else if(userChoice.length === gameChoice.length){
-          if(userChoice[i] === gameChoice[i]){
-              console.log("next round");
-
-          }
-          else if(userChoice[i] !== gameChoice[i]){
-              console.log("=game over");
-              gameOver();
-          }
-      }
   }
 }
 
-
-
-function animate(button){ // created for consistent code and animaation, used specifically for user clicks of simon buttons
-  setTimeout(() => {
-    button.classList.add("clicked");
-    setTimeout(() => {button.classList.remove("clicked")}, 200);
-  }, 100);
-}
-
-function waitUserChoice(){ // waits for the user choice, calls testChoice() on each user click of simon button and tests userChoice against gameChoice
-
-  userChoice = [];
-
-  function clickOne(){
-    userChoice.push(1);
-    console.log(1);
-    animate(one)
-    btn1Sound.play();
-    testChoice();
-  }
-
-  function clickTwo(){
-    userChoice.push(2);
-    console.log(2);
-    animate(two);
-    btn2Sound.play();
-    testChoice();
-  }
-
-  function clickThree(){
-    userChoice.push(3);
-    console.log(3);
-    animate(three);
-    btn3Sound.play();
-    testChoice();
-  }
-
-  function clickFour(){
-    userChoice.push(4)
-    console.log(4);
-    animate(four);
-    btn4Sound.play();
-    testChoice();
-  }
-
-  one.onclick = clickOne;
-  two.onclick = clickTwo;
-  three.onclick = clickThree;
-  four.onclick = clickFour;
-
-}
 
 function playGameChoice(){ // plays the games turn, animations in place for each gameChoice made, calls waitUserChoice at the end
 
@@ -153,9 +102,58 @@ function playGameChoice(){ // plays the games turn, animations in place for each
 
   }
 
+  function waitUserChoice(){
+
+    function animate(button){ // created for consistent code and animaation, used specifically for user clicks of simon buttons
+      setTimeout(() => {
+        button.classList.add("clicked");
+        setTimeout(() => {button.classList.remove("clicked")}, 200);
+      }, 100);
+    }
+
+    function clickOne(){
+      userChoice.push(1);
+      console.log(1);
+      animate(one)
+      btn1Sound.play();
+      testChoice();
+    }
+
+    function clickTwo(){
+      userChoice.push(2);
+      console.log(2);
+      animate(two);
+      btn2Sound.play();
+      testChoice();
+    }
+
+    function clickThree(){
+      userChoice.push(3);
+      console.log(3);
+      animate(three);
+      btn3Sound.play();
+      testChoice();
+    }
+
+    function clickFour(){
+      userChoice.push(4)
+      console.log(4);
+      animate(four);
+      btn4Sound.play();
+      testChoice();
+    }
+
+    one.onclick = clickOne;
+    two.onclick = clickTwo;
+    three.onclick = clickThree;
+    four.onclick = clickFour;
+
+  }
+
   waitUserChoice();
 
 }
+
 
 function startGame(){ // tied to start.onclick, initiates playGameChoice() after 1 second
   setTimeout(() => {
