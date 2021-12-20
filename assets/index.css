@@ -63,6 +63,10 @@ header{
   padding: 0;
 }
 
+.active{
+  text-decoration: underline;
+}
+
 .unlist{
   list-style: none;
   /* justify-self: center; */
@@ -188,6 +192,8 @@ footer{
   align-self: start;
 }
 
+/* ↑ styling for simon game buttons ↑ */
+
 #gameover{
   font-family: 'Permanent Marker', cursive;
   color: #DDA0DD;
@@ -205,5 +211,3 @@ footer{
   font-size: 3rem;
   justify-self: center;
 }
-
-/* ↑ styling for simon game buttons ↑ */
