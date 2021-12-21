@@ -1,8 +1,8 @@
 // https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68
 
 userChoice = [];
-gameChoice = [];
-choices = [1,2,3,4];
+gameChoice = []
+let scenario
 let level = 1;
 let one = document.getElementById("btn1");
 let two = document.getElementById("btn2");
@@ -60,10 +60,24 @@ function gameOver(){ // ends the game, activated if user makes an incorrect choi
   gameOverSound.play();
 }
 
+// function passScenario(){
+//   switch(scenario){
+//     case 1:
+//     break;
+//     case 2:
+//     gameOver();
+//     break;
+//     case 3:
+//     gameOver();
+//     case 4:
+//     setTimeout(playGameChoice, 2000);
+//   }
+// }
+
 function testChoice(){ // tests array equality by iteration
 
-  for (i=0;i<userChoice.length;i++){
       if(userChoice.length < gameChoice.length){
+      for (i=0;i<userChoice.length;i++){
         if(userChoice[i] === gameChoice[i]){
             console.log("win");
         }
@@ -72,19 +86,46 @@ function testChoice(){ // tests array equality by iteration
           gameOver();
         }
       }
-      else if(userChoice.length >= gameChoice.length){
-        if(userChoice[i] !== gameChoice[i]){
+      }
+
+      else if(userChoice.length === gameChoice.length){
+        if(userChoice[userChoice.length - 1] !== gameChoice[gameChoice.length -1]){
             console.log("=game over");
             gameOver();
           }
-        else if(userChoice[i] === gameChoice[i]){
+        else if(userChoice[userChoice.length - 1] === gameChoice[gameChoice.length -1]){
             console.log("next round");
             userChoice = [];
             level++;
             setTimeout(playGameChoice, 2000);
           }
       }
-  }
+
+
+
+  // for (i=0;i<userChoice.length;i++){
+  //     if(userChoice.length < gameChoice.length){
+  //       if(userChoice[i] === gameChoice[i]){
+  //           console.log("win");
+  //       }
+  //       else if(userChoice[i] !== gameChoice[i]){
+  //         console.log("<game over");
+  //         gameOver();
+  //       }
+  //     }
+  //     else if(userChoice.length >= gameChoice.length){
+  //       if(userChoice[i] !== gameChoice[i]){
+  //           console.log("=game over");
+  //           gameOver();
+  //         }
+  //       else if(userChoice[i] === gameChoice[i]){
+  //           console.log("next round");
+  //           userChoice = [];
+  //           level++;
+  //           setTimeout(playGameChoice, 2000);
+  //         }
+  //     }
+  // }
 }
 
 
