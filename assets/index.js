@@ -40,6 +40,8 @@ function resetClicked(){
   animate(reset);
   userChoice = [];
   gameChoice = [];
+  level = 1;
+  levelNumber.innerHTML = level;
   start.classList.remove("hidden");
   reset.classList.add("hidden");
   one.classList.remove("hidden");
@@ -59,20 +61,6 @@ function gameOver(){ // ends the game, activated if user makes an incorrect choi
 
   gameOverSound.play();
 }
-
-// function passScenario(){
-//   switch(scenario){
-//     case 1:
-//     break;
-//     case 2:
-//     gameOver();
-//     break;
-//     case 3:
-//     gameOver();
-//     case 4:
-//     setTimeout(playGameChoice, 2000);
-//   }
-// }
 
 function testChoice(){ // tests array equality by iteration
 
@@ -215,7 +203,6 @@ function playGameChoice(){ // plays the games turn, animations in place for each
       }
 
   }
-
 
   waitUserChoice();
 
