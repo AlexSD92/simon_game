@@ -20,7 +20,7 @@ body{
 /* ↓ styling for simon game buttons ↓ */
 
 #parentgrid{
-  background-color: #000000;
+  background-color: #eaebed;
   height: fit-content;
   display: grid;
   grid-template-areas:
@@ -37,7 +37,7 @@ header{
   padding: 20px;
   text-align: center;
   border-radius: 25px;
-  background-color: #808080;
+  background-color: #756d64;
   display: grid;
   grid-template-areas:
   "logo"
@@ -50,7 +50,7 @@ header{
   grid-area: logo;
   /* justify-self: center; */
   font-family: 'Permanent Marker', cursive;
-  color: #DDA0DD;
+  color: #2e294e;
   font-size: 5rem;
   margin: 0;
   padding: 0;
@@ -81,7 +81,7 @@ header{
 }
 
 .unlist a{
-  color: #DDA0DD;
+  color: #2e294e;
   text-decoration: none;
   font-size: 2rem;
   padding: 1% 2%;
@@ -90,17 +90,17 @@ header{
 
 .unlist a:hover{
   transition: .5s;
-  background-color: #000000;
-  color: #808080;
+  background-color: #2e294e;
+  color: #eaebed;
 }
 
 footer{
-  color: #DDA0DD;
+  color: #2e294e;
   margin: 10px;
   font-size: 3rem;
   padding: 20px;
   border-radius: 25px;
-  background-color: #808080;
+  background-color: #756d54;
   grid-area: footer;
   text-align: center;
 }
@@ -136,19 +136,19 @@ footer{
   height: 17.5vw;
   border: none;
   margin: 20px;
-  box-shadow: 0px 0px 25px 10px #808080;
+  box-shadow: 0px 0px 25px 5px #808080;
   transition: .5s;
 }
 
 .ctrlbtn{
-  background-color: #DDA0DD;
+  background-color: #756d54;
   font-family: 'Indie Flower', cursive;
   width: 15vw;
   height: 7.5vw;
   padding: 10px;
   font-size: 2rem;
-  color: #808080;
-  box-shadow: 0px 0px 25px 10px #808080;
+  color: #2e294e;
+  box-shadow: 0px 0px 25px 5px #808080;
   border-radius: 25px;
   border: none;
   font-weight: bolder;;
@@ -161,7 +161,7 @@ footer{
 }
 
 #btn1{
-  background-color: #ff1818;
+  background-color: #e83f6f;
   border-radius: 100% 25px 25px 25px;
   grid-area: btn1;
   justify-self: right;
@@ -169,7 +169,7 @@ footer{
 }
 
 #btn2{
-  background-color: #39FF14;
+  background-color: #32936F;
   border-radius: 25px 100% 25px 25px;
   grid-area: btn2;
   justify-self: left;
@@ -177,7 +177,7 @@ footer{
 }
 
 #btn3{
-  background-color: #1F51FF;
+  background-color: #2274a5;
   border-radius: 25px 25px 25px 100%;
   grid-area: btn3;
   justify-self: right;
@@ -185,7 +185,7 @@ footer{
 }
 
 #btn4{
-  background-color: #FFF300;
+  background-color: #Ffbf00;
   border-radius: 25px 25px 100% 25px;
   grid-area: btn4;
   justify-self: left;
@@ -196,7 +196,7 @@ footer{
 
 #gameover{
   font-family: 'Permanent Marker', cursive;
-  color: #DDA0DD;
+  color: #2e294e;
   text-align: center;
   font-size: 3rem;
   grid-area: gameover;
@@ -205,7 +205,7 @@ footer{
 
 #levelheader{
   font-family: 'Permanent Marker', cursive;
-  color: #DDA0DD;
+  color: #2e294e;
   grid-area: levelheader;
   text-align: center;
   font-size: 3rem;
