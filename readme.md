@@ -86,6 +86,18 @@ Design a site with a focused style that does not distract from the Simon Says ga
 #### Mobile
 [Home]()
 
+## surface
+
+### Colors
+
+The following color scheme for this site was selected by using [Coolors](https://coolors.co/).
+
+- Header, Footer and Button background colors: #756d54
+- Header, Footer, Button, Heading & Text font: #2E294E
+- Simon Button colors: #FFBF00, #E83F6F, #2274A5 & #32936f
+
+![Image of the color scheme](assets\images\coolors.png)
+
 ### Typography
 
 The following fonts were used from [Google Fonts](https://fonts.google.com/?category=Handwriting&query=permanent):
@@ -132,7 +144,7 @@ The following fonts were used from [Google Fonts](https://fonts.google.com/?cate
 
 15/12/2021 - Bug identified where repeating objects in playGameChoice weren't animating correctly. This was fixed by adjusting the setTimeout to i*1000 to create delay in the iteration of the gameChoice array.
 16/12/2021 - Bug identified where testChoice() kept defaulting to the else statement, the for loop needed adjusting so that it iterated through a slice of gameChoice that was equivalent to the length of userChoice. In code, it meant changing userChoice[i] === gameChoice[i] to userChoice[i] === gameChoice.slice(0, userChoice.length)[i].
-18/12/2021 - 21/12/2021 - Bug identified where testChoice() would default to the next round regardless of whether the last choice was correct or incorrect. This was corrected for by having two overall if statements. The first tested if the userChoice < gameChoice in length, if it was, it iterated through the array for the length of userChoice and tested for equality. If equal, continue, if not equal, game over. The second tested whether the arrays are equal in length. If equal, a further test is done to check whether the last object in each array are equivalent. If they are equivalent, next round, if they aren't equivalent, game over. 
+18/12/2021 - 21/12/2021 - Bug identified where testChoice() would default to the next round regardless of whether the last choice was correct or incorrect. This was corrected for by having two overall if statements. The first tested if the userChoice < gameChoice in length, if it was, it iterated through the array for the length of userChoice and tested for equality. If equal, continue, if not equal, game over. The second tested whether the arrays are equal in length. If equal, a further test is done to check whether the last object in each array are equivalent. If they are equivalent, next round, if they aren't equivalent, game over.
 
 # Deployment
 
@@ -147,6 +159,7 @@ The following fonts were used from [Google Fonts](https://fonts.google.com/?cate
 - [Audacity](https://www.audacityteam.org/)
 - [Freesound](https://freesound.org/)
    - [Freesound - Simon](https://freesound.org/people/Timbre/sounds/171398/)
+- [Coolors](https://coolors.co/)
 
 
 ---
