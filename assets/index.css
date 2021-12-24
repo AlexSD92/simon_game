@@ -136,7 +136,7 @@ footer{
   height: 17.5vw;
   border: none;
   margin: 20px;
-  box-shadow: 0px 0px 25px 5px #808080;
+  box-shadow: 0px 0px 25px 5px #000000;
   transition: .5s;
 }
 
@@ -148,7 +148,7 @@ footer{
   padding: 10px;
   font-size: 2rem;
   color: #2e294e;
-  box-shadow: 0px 0px 25px 5px #808080;
+  box-shadow: 0px 0px 25px 5px #000000;
   border-radius: 25px;
   border: none;
   font-weight: bolder;;
