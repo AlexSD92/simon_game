@@ -109,35 +109,42 @@ footer{
   font-family: 'Permanent Marker', cursive;
   color: #2e294e;
   display: grid;
+  grid-template-columns: 1fr 3vw 1fr 3vw 1fr;
   grid-template-areas:
-  "step1 step1p"
-  "step2 step2p"
-  "step3 step3p"
+  "step1 . step1p . ."
+  "step2 . step2p . ."
+  "step3 . step3p . ."
   ;
 }
 
 #step1{
   grid-area: step1;
+  justify-self: end;
 }
 
 #step2{
   grid-area: step2;
+  justify-self: end;
 }
 
 #step3{
-  grid-area: step3
+  grid-area: step3;
+  justify-self: end;
 }
 
 #step1p{
   grid-area: step1p;
+  justify-self: start;
 }
 
 #step2p{
   grid-area: step2p;
+  justify-self: start;
 }
 
 #step3p{
   grid-area: step3p;
+  justify-self: start;
 }
 
 ↑ instructions ↑

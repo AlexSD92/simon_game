@@ -160,6 +160,7 @@ The following fonts were used from [Google Fonts](https://fonts.google.com/?cate
 - [Freesound](https://freesound.org/)
    - [Freesound - Simon](https://freesound.org/people/Timbre/sounds/171398/)
 - [Coolors](https://coolors.co/)
+- [Screen to GIF](https://www.screentogif.com/)
 
 
 ---
