@@ -111,9 +111,9 @@ footer{
   display: grid;
   grid-template-columns: 1fr 3vw 1fr 3vw 1fr;
   grid-template-areas:
-  "step1 . step1p . ."
-  "step2 . step2p . ."
-  "step3 . step3p . ."
+  "step1 . step1p . step1img"
+  "step2 . step2p . step2img"
+  "step3 . step3p . step3img"
   ;
 }
 
@@ -146,5 +146,18 @@ footer{
   grid-area: step3p;
   justify-self: start;
 }
+
+#step1img{
+  grid-area: step1img;
+}
+
+#step2img{
+  grid-area: step2img;
+}
+
+#step3img{
+  grid-area: step3img;
+}
+
 
 ↑ instructions ↑
