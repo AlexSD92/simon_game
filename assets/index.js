@@ -22,9 +22,12 @@ let levelNumber = document.getElementById("levelnumber");
 // const HIGH_SCORES = 'highScores';
 // const highScoreString = localStorage.getItem(HIGH_SCORES);
 // const highScores = JSON.parse(highScoreString) ?? [];
+
 const scoreList = [];
-const score = level - 1;
-const no_of_scores = 3;
+let score = 22;
+
+
+const no_of_scores = 10;
 
 // ↓↓↓ https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68=
 
@@ -39,32 +42,24 @@ function pushScore(){
 
   scoreList.sort((a, b) => b.score - a.score);
 
-  localStorage.setItem(scoreList, JSON.stringify(scoreList));
+  localStorage.setItem("scoreList", JSON.stringify(scoreList));
 
 }
 
-function checkScores(){
-
-  const currentScores = JSON.parse(localStorage.getItem(scoreList)) ?? [];
-  const lowestScore = scoreList[no_of_scores - 1]?.score ?? 0;
-
-  if (score > lowestScore){
-    pushScore();
-  }
-
-}
-
-function displayScores(){
-  const highScores = JSON.parse(localStorage.getItem(scoreList)) ?? [];
-  const highScoreList = document.getElementById("highscores");
-
-  highScoreList.innerHTML = highScores
-    .map((score) => `<li>${score.score} - ${score.name}`)
-    .join('');
-}
+// function checkScores(){
+//
+//   const currentScores = JSON.parse(localStorage.getItem(scoreList)) ?? [];
+//   const lowestScore = scoreList[no_of_scores - 1]?.score ?? 0;
+//
+//   if (score > lowestScore){
+//     pushScore();
+//   }
+//
+// }
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value
+// https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value
+// https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage
 
 function saveHighScore(score, highScores) {
   const name = prompt('You got a highscore! Enter name:');
