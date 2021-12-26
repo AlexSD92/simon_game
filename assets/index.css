@@ -1,27 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&display=swap');
-
-/* font-family: 'Indie Flower', cursive;
-font-family: 'Permanent Marker', cursive; */
-
-body{
-  padding: 0;
-  margin: 0;
-}
-
-.hidden{
-  display: none;
-}
-/* h2{
-  font-family: 'Permanent Marker', cursive;
-  color: #DDA0DD;
-  text-align: center;
-} */
-
 /* ↓ styling for simon game buttons ↓ */
 
 #parentgrid{
-  background-color: #eaebed;
-  height: fit-content;
   display: grid;
   grid-template-areas:
   "header"
@@ -33,11 +12,6 @@ body{
 }
 
 header{
-  margin: 10px 10px 50px 10px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 25px;
-  background-color: #756d64;
   display: grid;
   grid-template-areas:
   "logo"
@@ -48,59 +22,13 @@ header{
 
 #logo{
   grid-area: logo;
-  /* justify-self: center; */
-  font-family: 'Permanent Marker', cursive;
-  color: #2e294e;
-  font-size: 5rem;
-  margin: 0;
-  padding: 0;
 }
 
 #navbar{
   grid-area: navbar;
-  font-family: 'Indie Flower', cursive;
-  margin: 0;
-  padding: 0;
-}
-
-.active{
-  text-decoration: underline;
-}
-
-.unlist{
-  list-style: none;
-  /* justify-self: center; */
-  margin: 0;
-  padding: 0;
-}
-
-.unlist li{
-  display: inline;
-  vertical-align: center;
-  padding: 0 5vw;
-}
-
-.unlist a{
-  color: #2e294e;
-  text-decoration: none;
-  font-size: 2rem;
-  padding: 1% 2%;
-  border-radius: 25px;
-}
-
-.unlist a:hover{
-  transition: .5s;
-  background-color: #2e294e;
-  color: #eaebed;
 }
 
 footer{
-  color: #2e294e;
-  margin: 10px;
-  font-size: 3rem;
-  padding: 20px;
-  border-radius: 25px;
-  background-color: #756d54;
   grid-area: footer;
   text-align: center;
 }
@@ -116,7 +44,6 @@ footer{
   justify-self: center;
   margin-bottom: 50px;
 }
-
 
 #btnwrapper{
   display: grid;
