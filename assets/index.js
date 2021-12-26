@@ -23,12 +23,13 @@ let levelNumber = document.getElementById("levelnumber");
 // const highScoreString = localStorage.getItem(HIGH_SCORES);
 // const highScores = JSON.parse(highScoreString) ?? [];
 const scoreList = [];
+const score = level - 1;
+const no_of_scores = 3;
 
 // ↓↓↓ https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68=
 
 function pushScore(){
 
-  const score = level - 1;
   const userName = prompt("You got a new score! Enter your name:");
   // JSON.stringify(userName);
 
@@ -36,7 +37,34 @@ function pushScore(){
 
   scoreList.push(newScore);
 
+  scoreList.sort((a, b) => b.score - a.score);
+
+  localStorage.setItem(scoreList, JSON.stringify(scoreList));
+
 }
+
+function checkScores(){
+
+  const currentScores = JSON.parse(localStorage.getItem(scoreList)) ?? [];
+  const lowestScore = scoreList[no_of_scores - 1]?.score ?? 0;
+
+  if (score > lowestScore){
+    pushScore();
+  }
+
+}
+
+function displayScores(){
+  const highScores = JSON.parse(localStorage.getItem(scoreList)) ?? [];
+  const highScoreList = document.getElementById("highscores");
+
+  highScoreList.innerHTML = highScores
+    .map((score) => `<li>${score.score} - ${score.name}`)
+    .join('');
+}
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value
 
 function saveHighScore(score, highScores) {
   const name = prompt('You got a highscore! Enter name:');
