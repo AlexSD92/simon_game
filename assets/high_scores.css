@@ -1,0 +1,34 @@
+/* ↓ high_scores ↓ */
+
+#parentgrid{
+  display: grid;
+  grid-template-areas:
+  "header"
+  /* "instructions" */
+  "footer"
+  ;
+}
+
+header{
+  display: grid;
+  grid-template-areas:
+  "logo"
+  "navbar"
+  ;
+  grid-area: header;
+}
+
+#logo{
+  grid-area: logo;
+}
+
+#navbar{
+  grid-area: navbar;
+}
+
+footer{
+  grid-area: footer;
+  text-align: center;
+}
+
+/* ↑ high_scores ↑ */
