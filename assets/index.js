@@ -1,8 +1,7 @@
 // https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68
 
 userChoice = [];
-gameChoice = []
-let scenario
+gameChoice = [];
 let level = 1;
 let one = document.getElementById("btn1");
 let two = document.getElementById("btn2");
@@ -19,6 +18,44 @@ let gameOverSound = new Audio("assets/sounds/gameOverSound.mp3");
 let gameOverMsg = document.getElementById("gameover");
 let levelHeader = document.getElementById("levelheader");
 let levelNumber = document.getElementById("levelnumber");
+// const NO_OF_HIGH_SCORES = 10;
+// const HIGH_SCORES = 'highScores';
+// const highScoreString = localStorage.getItem(HIGH_SCORES);
+// const highScores = JSON.parse(highScoreString) ?? [];
+const scoreList = [];
+
+// ↓↓↓ https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68=
+
+function pushScore(){
+
+  const score = level - 1;
+  const userName = prompt("You got a new score! Enter your name:");
+  // JSON.stringify(userName);
+
+  const newScore = {score, userName};
+
+  scoreList.push(newScore);
+
+}
+
+function saveHighScore(score, highScores) {
+  const name = prompt('You got a highscore! Enter name:');
+  const newScore = { score, name };
+
+  // 1. Add to list
+  highScores.push(newScore);
+
+  // 2. Sort the list
+  highScores.sort((a, b) => b.score - a.score);
+
+  // 3. Select new list
+  highScores.splice(NO_OF_HIGH_SCORES);
+
+  // 4. Save to local storage
+  localStorage.setItem(HIGH_SCORES, JSON.stringify(highScores));
+};
+
+// ↑↑↑ https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68=
 
 function randomSequence(){ // generates random number between 1 and 4 and pushes it to gameChoice array
   gameChoice.push(Math.floor((Math.random() * 4) + 1));
@@ -60,6 +97,7 @@ function gameOver(){ // ends the game, activated if user makes an incorrect choi
   reset.classList.remove("hidden");
 
   gameOverSound.play();
+  pushScore();
 }
 
 function testChoice(){ // tests array equality by iteration
