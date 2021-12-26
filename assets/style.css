@@ -1,1 +1,108 @@
 /* global styles only */
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&display=swap');
+
+/* font-family: 'Indie Flower', cursive;
+font-family: 'Permanent Marker', cursive; */
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.hidden{
+  display: none;
+}
+
+
+
+/* ↓ styling for simon game buttons ↓ */
+
+#parentgrid{
+  background-color: #eaebed;
+  height: fit-content;
+  display: grid;
+  grid-template-areas:
+  "header"
+  "instructions"
+  "footer"
+  ;
+}
+
+header{
+  margin: 10px 10px 50px 10px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 25px;
+  background-color: #756d64;
+}
+
+#logo{
+  /* justify-self: center; */
+  font-family: 'Permanent Marker', cursive;
+  color: #2e294e;
+  font-size: 5rem;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar{
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.active{
+  text-decoration: underline;
+}
+
+.unlist{
+  list-style: none;
+  /* justify-self: center; */
+  margin: 0;
+  padding: 0;
+}
+
+.unlist li{
+  display: inline;
+  vertical-align: center;
+  padding: 0 5vw;
+}
+
+.unlist a{
+  color: #2e294e;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1% 2%;
+  border-radius: 25px;
+}
+
+.unlist a:hover{
+  transition: .5s;
+  background-color: #2e294e;
+  color: #eaebed;
+}
+
+footer{
+  color: #2e294e;
+  margin: 10px;
+  font-size: 3rem;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: #756d54;
+  text-align: center;
+}
+
+/* ↓ instructions ↓ */
+
+#instructions{
+  font-family: 'Permanent Marker', cursive;
+  color: #2e294e;
+  display: grid;
+  grid-template-columns: 1fr 3vw 1fr 3vw 1fr;
+  grid-template-areas:
+  "step1 . step1p . step1img"
+  "step2 . step2p . step2img"
+  "step3 . step3p . step3img"
+  ;
+}
