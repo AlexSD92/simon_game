@@ -47,16 +47,16 @@ function pushScore(){
 
 }
 
-// function checkScores(){
-//
-//   const currentScores = JSON.parse(localStorage.getItem(scoreList)) ?? [];
-//   const lowestScore = scoreList[no_of_scores - 1]?.score ?? 0;
-//
-//   if (score > lowestScore){
-//     pushScore();
-//   }
-//
-// }
+function checkScores(){
+
+  const currentScores = JSON.parse(localStorage.getItem(scoreList)) ?? [];
+  const lowestScore = scoreList[no_of_scores - 1]?.level ?? 0;
+
+  if (level > lowestScore){
+    pushScore();
+  }
+
+}
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 // https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value
@@ -104,7 +104,7 @@ function gameOver(){ // ends the game, activated if user makes an incorrect choi
   reset.classList.remove("hidden");
 
   gameOverSound.play();
-  pushScore();
+  checkScores();
 }
 
 function testChoice(){ // tests array equality by iteration
