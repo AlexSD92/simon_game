@@ -23,33 +23,33 @@ let levelNumber = document.getElementById("levelnumber");
 // const highScoreString = localStorage.getItem(HIGH_SCORES);
 // const highScores = JSON.parse(highScoreString) ?? [];
 
-const scoreList = JSON.parse(localStorage.getItem("scoreList") ?? []);
+const scoreList = JSON.parse(localStorage.getItem("scoreList"));
 // https://stackoverflow.com/questions/43762363/how-to-store-an-array-of-objects-in-local-storage
 
-const no_of_scores = 10;
+const no_of_scores = 5;
 
 // ↓↓↓ https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68=
 
-function pushScore(){
-
-  const userName = prompt("You got a new score! Enter your name:");
-  // JSON.stringify(userName);
-
-  const newScore = {level, userName};
-
-  scoreList.push(newScore);
-
-  scoreList.sort((a, b) => b.level - a.level);
-
-  scoreList.splice(no_of_scores);
-
-  localStorage.setItem("scoreList", JSON.stringify(scoreList));
-
-}
-
 function checkScores(){
 
-  const currentScores = JSON.parse(localStorage.getItem(scoreList)) ?? [];
+  function pushScore(){
+
+    const userName = prompt("You got a new score! Enter your name:");
+    // JSON.stringify(userName);
+
+    const newScore = {level, userName};
+
+    scoreList.push(newScore);
+
+    scoreList.sort((a, b) => b.level - a.level);
+
+    scoreList.splice(no_of_scores);
+
+    localStorage.setItem("scoreList", JSON.stringify(scoreList));
+
+  }
+
+  const scoreList = JSON.parse(localStorage.getItem("scoreList")) ?? [];
   const lowestScore = scoreList[no_of_scores - 1]?.level ?? 0;
 
   if (level > lowestScore){
