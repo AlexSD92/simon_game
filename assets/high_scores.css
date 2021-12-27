@@ -4,7 +4,7 @@
   display: grid;
   grid-template-areas:
   "header"
-  /* "instructions" */
+  "highscores"
   "footer"
   ;
 }
@@ -24,6 +24,20 @@ header{
 
 #navbar{
   grid-area: navbar;
+}
+
+#highscorecontainer{
+  grid-area: highscores;
+  justify-self: center;
+}
+
+#highscorecontainer h2{
+  font-size: 3rem;
+}
+
+#highscores{
+  font-size: 2rem;
+  text-align: right;
 }
 
 footer{
