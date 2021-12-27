@@ -37,7 +37,15 @@ header{
 
 #highscores{
   font-size: 2rem;
-  text-align: right;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#highscores li{
+  padding: 5%;
+  margin: 0;
 }
 
 footer{
