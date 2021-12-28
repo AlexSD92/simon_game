@@ -73,7 +73,7 @@ header{
   color: #2e294e;
   text-decoration: none;
   font-size: 2rem;
-  padding: 1% 2%;
+  padding: 0 2%;
   border-radius: 25px;
 }
 
@@ -91,18 +91,4 @@ footer{
   border-radius: 25px;
   background-color: #756d54;
   text-align: center;
-}
-
-/* ↓ instructions ↓ */
-
-#instructions{
-  font-family: 'Permanent Marker', cursive;
-  color: #2e294e;
-  display: grid;
-  grid-template-columns: 1fr 3vw 1fr 3vw 1fr;
-  grid-template-areas:
-  "step1 . step1p . step1img"
-  "step2 . step2p . step2img"
-  "step3 . step3p . step3img"
-  ;
 }

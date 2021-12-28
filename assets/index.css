@@ -47,7 +47,7 @@ footer{
 
 #btnwrapper{
   display: grid;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   grid-gap: 0;
   grid-template-areas:
   "btn1 btn2"
@@ -59,8 +59,8 @@ footer{
 }
 
 .btn{
-  width: 17.5vw;
-  height: 17.5vw;
+  width: 12.5vw;
+  height: 12.5vw;
   border: none;
   margin: 20px;
   box-shadow: 0px 0px 25px 5px #000000;
@@ -70,8 +70,8 @@ footer{
 .ctrlbtn{
   background-color: #756d54;
   font-family: 'Indie Flower', cursive;
-  width: 15vw;
-  height: 7.5vw;
+  width: 10vw;
+  height: 10vw;
   padding: 10px;
   font-size: 2rem;
   color: #2e294e;
@@ -137,4 +137,14 @@ footer{
   text-align: center;
   font-size: 3rem;
   justify-self: center;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+  .btn{
+    width: 20vw;
+    height: 20vw;
+  }
+
 }
