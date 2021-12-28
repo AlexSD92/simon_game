@@ -2,6 +2,8 @@
 
 userChoice = [];
 gameChoice = [];
+let userTurn = document.getElementById("userturn");
+let computerTurn = document.getElementById("computerturn");
 let level = 1;
 let one = document.getElementById("btn1");
 let two = document.getElementById("btn2");
@@ -164,6 +166,9 @@ function testChoice(){ // tests array equality by iteration
 
 function waitUserChoice(){
 
+  userTurn.classList.remove("hidden");
+  computerTurn.classList.add("hidden");
+
     function clickOne(){
       userChoice.push(1);
       console.log(1);
@@ -207,8 +212,10 @@ function playGameChoice(){ // plays the games turn, animations in place for each
 
   randomSequence();
   levelNumber.innerHTML = level;
+  userTurn.classList.add("hidden");
+  computerTurn.classList.remove("hidden");
 
-
+setTimeout(() => {
   for (i=0; i<gameChoice.length; i++){
 
       switch(gameChoice[i]){
@@ -247,17 +254,23 @@ function playGameChoice(){ // plays the games turn, animations in place for each
 
       }
 
-  }
 
-  waitUserChoice();
+  }
+  setTimeout(() => {waitUserChoice()}, i * 1500);
+}, 500);
+
+  // setTimeout(() => {waitUserChoice()}, 1500);
+
+  // waitUserChoice();
 
 }
 
 
 function startGame(){ // tied to start.onclick, initiates playGameChoice() after 1 second
   start.classList.add("hidden");
+  computerTurn.classList.remove("hidden");
   levelHeader.classList.remove("hidden");
-  levelNumber.innerHTML = level
+  levelNumber.innerHTML = level;
   setTimeout(() => {
     playGameChoice();
   }, 1000)
