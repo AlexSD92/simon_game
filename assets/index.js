@@ -104,9 +104,11 @@ function gameOver(){ // ends the game, activated if user makes an incorrect choi
   three.classList.add("hidden");
   four.classList.add("hidden");
   reset.classList.remove("hidden");
+  userTurn.classList.add("hidden");
+  computerTurn.classList.add("hidden");
 
   gameOverSound.play();
-  checkScores();
+  setTimeout(checkScores, 1000);
 }
 
 function testChoice(){ // tests array equality by iteration
