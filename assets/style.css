@@ -19,9 +19,13 @@ h2 {
   color: #2e294e;
 }
 
-p, ol li {
+p, ol li, form{
   font-family: 'Indie Flower', cursive;
   color: #2e294e;
+}
+
+label{
+  font-size: 2rem;
 }
 
 

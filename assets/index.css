@@ -54,6 +54,7 @@ footer{
   "btn3 btn4"
   "gameover gameover"
   "levelheader levelheader"
+  "enterdetails enterdetails"
   ;
   grid-area: btnwrapper;
 }
@@ -128,6 +129,12 @@ footer{
   font-size: 3rem;
   grid-area: gameover;
   justify-self: center;
+}
+
+#enterdetails{
+  grid-area: enterdetails;
+  justify-self: center;
+  text-align: center;
 }
 
 #levelheader{
