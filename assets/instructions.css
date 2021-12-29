@@ -38,6 +38,7 @@ footer{
   display: grid;
   grid-template-columns: 5vw 1fr 3vw 1fr 3vw 1fr 5vw;
   column-gap: 0;
+  row-gap: 50px;
   grid-template-areas:
   ". step1 . step1p . step1img ."
   ". step2 . step2p . step2img ."
