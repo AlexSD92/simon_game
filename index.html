@@ -36,8 +36,8 @@
 
       <form id="enterdetails" class="hidden" action="index.html" method="post">
         <label for="name">You got a high score! Enter your name:</label><br><br>
-        <input type="text" name="name" value="Enter your name" required>
-        <input id="submitname" type="button" name="Sumbit" value="Submit">
+        <input id="namefield" type="text" name="name" value="name" placeholder="Enter name here" required>
+        <input id="submitname" type="button" name="Sumbit" value="Submit" onclick="pushScore()">
       </form>
 
     </section>

@@ -20,6 +20,9 @@ let gameOverSound = new Audio("assets/sounds/gameOverSound.mp3");
 let gameOverMsg = document.getElementById("gameover");
 let levelHeader = document.getElementById("levelheader");
 let levelNumber = document.getElementById("levelnumber");
+let submit = document.getElementById("submitname");
+let form = document.getElementById("enterdetails");
+let name = document.getElementById("namefield");
 // const NO_OF_HIGH_SCORES = 10;
 // const HIGH_SCORES = 'highScores';
 // const highScoreString = localStorage.getItem(HIGH_SCORES);
@@ -32,12 +35,18 @@ const no_of_scores = 5;
 
 // ↓↓↓ https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68=
 
+function storeName(){ // https://stackoverflow.com/questions/17087636/how-to-save-data-from-a-form-with-html5-local-storage
+  const userName = localStorage.setItem("userName", name.value);
+}
+
 function checkScores(){
 
   function pushScore(){
 
-    const userName = prompt("You got a new score! Enter your name:");
+    // const userName = prompt("You got a new score! Enter your name:");
     // JSON.stringify(userName);
+    storeName();
+    form.classList.remove("hidden");
 
     const newScore = {level, userName};
 
