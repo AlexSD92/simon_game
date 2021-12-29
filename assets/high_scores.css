@@ -28,11 +28,14 @@ header{
 
 #highscorecontainer{
   grid-area: highscores;
+  width: 50vw;
+  text-align: center;
   justify-self: center;
+  margin-bottom: 50px;
 }
 
 #highscorecontainer h2{
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 #highscores{
@@ -46,6 +49,42 @@ header{
 #highscores li{
   padding: 5%;
   margin: 0;
+}
+
+#highscores li:nth-child(1){
+  font-size: 4rem;
+}
+
+#highscores li:nth-child(1)::before{
+  content: "🎉";
+}
+
+#highscores li:nth-child(1)::after{
+  content: "🎉";
+}
+
+#highscores li:nth-child(2){
+  font-size: 3rem;
+}
+
+#highscores li:nth-child(2)::before{
+  content: "👏";
+}
+
+#highscores li:nth-child(2)::after{
+  content: "👏";
+}
+
+#highscores li:nth-child(3){
+  font-size: 2rem;
+}
+
+#highscores li:nth-child(3)::before{
+  content: "👌";
+}
+
+#highscores li:nth-child(3)::after{
+  content: "👌";
 }
 
 footer{
