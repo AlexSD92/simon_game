@@ -31,23 +31,21 @@ let name = document.getElementById("namefield");
 const scoreList = JSON.parse(localStorage.getItem("scoreList"));
 // https://stackoverflow.com/questions/43762363/how-to-store-an-array-of-objects-in-local-storage
 
-const no_of_scores = 5;
+const no_of_scores = 3;
 
 // ↓↓↓ https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68=
-
-function storeName(){ // https://stackoverflow.com/questions/17087636/how-to-save-data-from-a-form-with-html5-local-storage
-  const userName = localStorage.setItem("userName", name.value);
-}
+// https://stackoverflow.com/questions/17087636/how-to-save-data-from-a-form-with-html5-local-storage
 
 function checkScores(){
 
   function pushScore(){
 
     // const userName = prompt("You got a new score! Enter your name:");
+    let userName = name.value;
     // JSON.stringify(userName);
-    storeName();
-    form.classList.remove("hidden");
+    // storeName();
 
+    // const userName = localStorage.setItem("userName", value.value);
     const newScore = {level, userName};
 
     scoreList.push(newScore);
@@ -64,7 +62,9 @@ function checkScores(){
   const lowestScore = scoreList[no_of_scores - 1]?.level ?? 0;
 
   if (level > lowestScore){
-    pushScore();
+    form.classList.remove("hidden");
+    // pushScore();
+    submit.addEventListener("click", pushScore);
   }
 
 }
