@@ -36,58 +36,86 @@ footer{
 #instructions{
   font-size: 2rem;
   display: grid;
-  grid-template-columns: 1fr 3vw 1fr 3vw 1fr;
+  grid-template-columns: 5vw 1fr 3vw 1fr 3vw 1fr 5vw;
   column-gap: 0;
   grid-template-areas:
-  "step1 . step1p . step1img"
-  "step2 . step2p . step2img"
-  "step3 . step3p . step3img"
+  ". step1 . step1p . step1img ."
+  ". step2 . step2p . step2img ."
+  ". step3 . step3p . step3img ."
+  ". step4 . step4p . step4img ."
   ;
 }
 
 #step1{
   grid-area: step1;
-  justify-self: end;
+  justify-self: center;
+  align-self: center;
 }
 
 #step2{
   grid-area: step2;
-  justify-self: end;
+  justify-self: center;
+  align-self: center;
 }
 
 #step3{
   grid-area: step3;
-  justify-self: end;
+  justify-self: center;
+  align-self: center;
+}
+
+#step4{
+  grid-area: step4;
+  justify-self: center;
+  align-self: center;
 }
 
 #step1p{
   grid-area: step1p;
   justify-self: start;
+  align-self: center;
 }
 
 #step2p{
   grid-area: step2p;
   justify-self: start;
+  align-self: center;
 }
 
 #step3p{
   grid-area: step3p;
   justify-self: start;
+  align-self: center;
+}
+
+#step4p{
+  grid-area: step4p;
+  justify-self: start;
+  align-self: center;
 }
 
 #step1img{
   grid-area: step1img;
   justify-self: start;
+  align-self: center;
 }
 
 #step2img{
   grid-area: step2img;
   justify-self: start;
+  align-self: center;
 }
 
 #step3img{
   grid-area: step3img;
   justify-self: start;
+  align-self: center;
+}
+
+#step4img{
+  grid-area: step4img;
+  justify-self:start;
+  align-self: center;
 }
 
 /* ↑ instructions ↑ */
