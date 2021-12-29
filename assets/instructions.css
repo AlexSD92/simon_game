@@ -34,6 +34,7 @@ footer{
 /* ↓ instructions ↓ */
 
 #instructions{
+  font-size: 2rem;
   display: grid;
   grid-template-columns: 1fr 3vw 1fr 3vw 1fr;
   column-gap: 0;
