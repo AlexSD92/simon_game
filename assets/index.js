@@ -97,19 +97,7 @@ function startClicked(){
 
 function resetClicked(){
   animate(reset);
-  userChoice = [];
-  gameChoice = [];
-  level = 1;
-  levelNumber.innerHTML = level;
-  start.classList.remove("hidden");
-  reset.classList.add("hidden");
-  one.classList.remove("hidden");
-  two.classList.remove("hidden");
-  three.classList.remove("hidden");
-  four.classList.remove("hidden");
-  gameOverMsg.classList.add("hidden");
-  levelHeader.classList.remove("hidden");
-  submittedMsg.classList.add("hidden");
+  window.location.reload();
 }
 
 function gameOver(){ // ends the game, activated if user makes an incorrect choice; empties both userChoice and gameChoice arrays
@@ -148,6 +136,10 @@ function testChoice(){ // tests array equality by iteration
         else if(userChoice[userChoice.length - 1] === gameChoice[gameChoice.length -1]){
             console.log("next round");
             userChoice = [];
+            one.onclick = null;
+            two.onclick = null;
+            three.onclick = null;
+            four.onclick = null;
             level++;
             setTimeout(playGameChoice, 2000);
           }
@@ -217,6 +209,11 @@ function waitUserChoice(){
       btn4Sound.play();
       testChoice();
     }
+    // eventlistener fires twice and causes code to fail
+    // one.addEventListener("click", clickOne);
+    // two.addEventListener("click", clickTwo);
+    // three.addEventListener("click", clickThree);
+    // four.addEventListener("click", clickFour);
 
     one.onclick = clickOne;
     two.onclick = clickTwo;

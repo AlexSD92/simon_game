@@ -2,6 +2,7 @@
 
 #parentgrid{
   display: grid;
+  min-height: 100vh;
   grid-template-areas:
   "header"
   "btnwrapper"
