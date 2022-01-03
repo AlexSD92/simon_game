@@ -53,6 +53,7 @@ footer{
   "btn1 btn2"
   "btn3 btn4"
   "gameover gameover"
+  "scoresubmitted scoresubmitted"
   "levelheader levelheader"
   "enterdetails enterdetails"
   ;
@@ -128,6 +129,15 @@ footer{
   text-align: center;
   font-size: 3rem;
   grid-area: gameover;
+  justify-self: center;
+}
+
+#scoresubmitted{
+  font-family: 'Permanent Marker', cursive;
+  color: #2e294e;
+  text-align: center;
+  font-size: 3rem;
+  grid-area: scoresubmitted;
   justify-self: center;
 }
 

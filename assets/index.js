@@ -21,6 +21,7 @@ let gameOverMsg = document.getElementById("gameover");
 let levelHeader = document.getElementById("levelheader");
 let levelNumber = document.getElementById("levelnumber");
 let submit = document.getElementById("submitname");
+let submittedMsg = document.getElementById("scoresubmitted");
 let form = document.getElementById("enterdetails");
 let name = document.getElementById("namefield");
 // const NO_OF_HIGH_SCORES = 10;
@@ -40,6 +41,9 @@ function checkScores(){
 
   function pushScore(){
 
+    levelHeader.classList.add("hidden");
+    submittedMsg.classList.remove("hidden");
+    form.classList.add("hidden");
     // const userName = prompt("You got a new score! Enter your name:");
     let userName = name.value;
     // JSON.stringify(userName);
@@ -104,6 +108,8 @@ function resetClicked(){
   three.classList.remove("hidden");
   four.classList.remove("hidden");
   gameOverMsg.classList.add("hidden");
+  levelHeader.classList.remove("hidden");
+  submittedMsg.classList.add("hidden");
 }
 
 function gameOver(){ // ends the game, activated if user makes an incorrect choice; empties both userChoice and gameChoice arrays
