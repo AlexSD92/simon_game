@@ -28,7 +28,7 @@ header{
 
 #highscorecontainer{
   grid-area: highscores;
-  width: 50vw;
+  width: 100vw;
   text-align: center;
   justify-self: center;
   margin-bottom: 50px;
