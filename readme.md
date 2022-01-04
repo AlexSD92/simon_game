@@ -6,9 +6,9 @@
 
 #### This project was developed for the second project with the Code Institute and the Full Stack Development course.
 
-### [Click here to view Site.]()
+### [Click here to view Site.](https://alexsd92.github.io/simon_game/)
 
-### [Click here to view Repository.]()
+### [Click here to view Repository.](https://github.com/AlexSD92/simon_game)
 
 # Table of Contents:
 
