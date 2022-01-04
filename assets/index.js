@@ -270,7 +270,7 @@ setTimeout(() => {
 
 
   }
-  setTimeout(() => {waitUserChoice()}, i * 1500);
+  setTimeout(() => {waitUserChoice()}, i * 1000);
 }, 500);
 
   // setTimeout(() => {waitUserChoice()}, 1500);
