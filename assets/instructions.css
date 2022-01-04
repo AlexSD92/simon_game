@@ -35,88 +35,128 @@ footer{
 
 #instructions{
   font-size: 2rem;
+  margin-bottom: 50px;
   display: grid;
-  grid-template-columns: 5vw 1fr 3vw 1fr 3vw 1fr 5vw;
-  column-gap: 0;
-  row-gap: 50px;
+  grid-template-columns: 15vw 1fr 15vw 1fr 15vw;
+  grid-row-gap: 50px;
   grid-template-areas:
-  ". step1 . step1p . step1img ."
-  ". step2 . step2p . step2img ."
-  ". step3 . step3p . step3img ."
-  ". step4 . step4p . step4img ."
+  ". step1 . step1img ."
+  ". step1p . step1img ."
+  ". step2 . step2img ."
+  ". step2p . step2img ."
+  ". step3 . step3img ."
+  ". step3p . step3img ."
+  ". step4 . step4img ."
+  ". step4p . step4img ."
   ;
 }
 
 #step1{
   grid-area: step1;
   justify-self: center;
-  align-self: center;
+  align-self: end;
+  margin: 0;
+  padding: 0;
 }
 
 #step2{
   grid-area: step2;
   justify-self: center;
-  align-self: center;
+  align-self: end;
+  margin: 0;
+  padding: 0;
 }
 
 #step3{
   grid-area: step3;
   justify-self: center;
-  align-self: center;
+  align-self: end;
+  margin: 0;
+  padding: 0;
 }
 
 #step4{
   grid-area: step4;
   justify-self: center;
-  align-self: center;
+  align-self: end;
+  margin: 0;
+  padding: 0;
 }
 
 #step1p{
   grid-area: step1p;
   justify-self: start;
-  align-self: center;
+  align-self: start;
+  margin: 0;
+  padding: 0;
 }
 
 #step2p{
   grid-area: step2p;
   justify-self: start;
-  align-self: center;
+  align-self: start;
+  margin: 0;
+  padding: 0;
 }
 
 #step3p{
   grid-area: step3p;
   justify-self: start;
-  align-self: center;
+  align-self: start;
+  margin: 0;
+  padding: 0;
 }
 
 #step4p{
   grid-area: step4p;
   justify-self: start;
-  align-self: center;
+  align-self: start;
+  margin: 0;
+  padding: 0;
 }
 
 #step1img{
   grid-area: step1img;
   justify-self: start;
   align-self: center;
+  height: auto;
+  width: 100%;
+  border-radius: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 #step2img{
   grid-area: step2img;
   justify-self: start;
   align-self: center;
+  height: auto;
+  width: 100%;
+  border-radius: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 #step3img{
   grid-area: step3img;
   justify-self: start;
   align-self: center;
+  height: auto;
+  width: 100%;
+  border-radius: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 #step4img{
   grid-area: step4img;
   justify-self:start;
   align-self: center;
+  height: auto;
+  width: 100%;
+  border-radius: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 /* ↑ instructions ↑ */

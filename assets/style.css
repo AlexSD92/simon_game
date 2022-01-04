@@ -74,7 +74,7 @@ header{
   list-style: none;
   /* justify-self: center; */
   margin: 0;
-  padding: 0;
+  padding: 30px;
 }
 
 .unlist li{
