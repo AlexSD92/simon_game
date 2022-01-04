@@ -91,6 +91,10 @@ header{
   border-radius: 25px;
 }
 
+.unlist i{
+  font-size: 4rem;
+}
+
 .unlist a:hover{
   transition: .5s;
   background-color: #2e294e;
