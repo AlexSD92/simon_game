@@ -91,10 +91,6 @@ header{
   border-radius: 25px;
 }
 
-.unlist i{
-  font-size: 4rem;
-}
-
 .unlist a:hover{
   transition: .5s;
   background-color: #2e294e;
@@ -109,4 +105,28 @@ footer{
   border-radius: 25px;
   background-color: #756d54;
   text-align: center;
+}
+
+footer ul{
+  list-style: none;
+  /* justify-self: center; */
+  margin: 0;
+  padding: 30px;
+}
+
+footer li{
+  display: inline;
+  vertical-align: center;
+  padding: 0 5vw;
+}
+
+footer a{
+  color: #2e294e;
+  text-decoration: none;
+  font-size: 2rem;
+  /* border-radius: 25px; */
+}
+
+footer i{
+  font-size: 4rem;
 }
