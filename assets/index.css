@@ -164,11 +164,11 @@ footer{
     width: 20vw;
     height: 20vw;
   }
+}
 
 @media screen and (max-width: 600px) {
   .btn{
     width: 30vw;
     height: 30vw;
   }
-
 }

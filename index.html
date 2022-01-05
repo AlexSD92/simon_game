@@ -15,9 +15,9 @@
 
   <div id="parentgrid">
 
+    <header>
     <!-- ↓ header ↓ -->
 
-    <header>
       <h1 id="logo">Simon Game</h1>
       <ul id="navbar" class="unlist">
         <li><a class="active" href="index.html">Home</a></li>
@@ -42,10 +42,10 @@
 
       <h2 id="gameover" class="hidden">GAME OVER</h2>
 
-      <h2 id="scoresubmitted" class="hidden">Thank you for submitting your score!<br>You can view your score <a href="C:\Users\Alex\Desktop\simon_game\high_scores.html">here.</a></h2>
+      <h2 id="scoresubmitted" class="hidden">Thank you for submitting your score!<br>You can view your score <a href="high_scores.html">here.</a></h2>
 
-      <form id="enterdetails" class="hidden" action="index.html" method="post">
-        <label for="name">You got a high score! Enter your name:</label><br><br>
+      <form id="enterdetails" class="hidden" action="index.html" method="get">
+        <label for="namefield">You got a high score! Enter your name:</label><br><br>
         <input id="namefield" type="text" name="name" value="" required>
         <input id="submitname" type="button" name="Sumbit" value="Submit">
       </form>
@@ -70,6 +70,6 @@
 
     </div>
 
-    <script src="assets/index.js" charset="utf-8"></script>
+    <script src="assets/index.js"></script>
   </body>
 </html>

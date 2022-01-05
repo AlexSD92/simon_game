@@ -1,7 +1,7 @@
 // https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68
-
-userChoice = [];
-gameChoice = [];
+/*jshint esversion: 11 */
+let userChoice = [];
+let gameChoice = [];
 let userTurn = document.getElementById("userturn");
 let computerTurn = document.getElementById("computerturn");
 let level = 1;
@@ -15,7 +15,7 @@ let btn1Sound = new Audio("assets/sounds/btn1Sound.mp3");
 let btn2Sound = new Audio("assets/sounds/btn2Sound.mp3");
 let btn3Sound = new Audio("assets/sounds/btn3Sound.mp3");
 let btn4Sound = new Audio("assets/sounds/btn4Sound.mp3");
-let btnWrapper = document.getElementById("btnwrapper");
+// let btnWrapper = document.getElementById("btnwrapper");
 let gameOverSound = new Audio("assets/sounds/gameoverSound.mp3");
 let gameOverMsg = document.getElementById("gameover");
 let levelHeader = document.getElementById("levelheader");
@@ -29,7 +29,7 @@ let name = document.getElementById("namefield");
 // const highScoreString = localStorage.getItem(HIGH_SCORES);
 // const highScores = JSON.parse(highScoreString) ?? [];
 
-const scoreList = JSON.parse(localStorage.getItem("scoreList"));
+//const scoreList = JSON.parse(localStorage.getItem("scoreList"));
 // https://stackoverflow.com/questions/43762363/how-to-store-an-array-of-objects-in-local-storage
 
 const no_of_scores = 3;
@@ -86,7 +86,7 @@ function randomSequence(){ // generates random number between 1 and 4 and pushes
 function animate(button){ // created for consistent code and animaation, used specifically for user clicks of simon buttons
   setTimeout(() => {
     button.classList.add("clicked");
-    setTimeout(() => {button.classList.remove("clicked")}, 200);
+    setTimeout(() => {button.classList.remove("clicked");}, 200);
   }, 100);
 }
 
@@ -99,6 +99,8 @@ function resetClicked(){
   animate(reset);
   window.location.reload();
 }
+
+/*to describe all functions*/
 
 function gameOver(){ // ends the game, activated if user makes an incorrect choice; empties both userChoice and gameChoice arrays
   gameOverMsg.classList.remove("hidden");
@@ -181,7 +183,7 @@ function waitUserChoice(){
     function clickOne(){
       userChoice.push(1);
       console.log(1);
-      animate(one)
+      animate(one);
       btn1Sound.play();
       testChoice();
     }
@@ -203,7 +205,7 @@ function waitUserChoice(){
     }
 
     function clickFour(){
-      userChoice.push(4)
+      userChoice.push(4);
       console.log(4);
       animate(four);
       btn4Sound.play();
@@ -238,7 +240,7 @@ setTimeout(() => {
         setTimeout(() => {
           one.classList.add("clicked");
           btn1Sound.play();
-          setTimeout(() => {one.classList.remove("clicked")}, 500);
+          setTimeout(() => {one.classList.remove("clicked");}, 500);
         }, i*1000);
         break;
 
@@ -246,7 +248,7 @@ setTimeout(() => {
         setTimeout(() => {
           two.classList.add("clicked");
           btn2Sound.play();
-          setTimeout(() => {two.classList.remove("clicked")}, 500);
+          setTimeout(() => {two.classList.remove("clicked");}, 500);
         }, i*1000);
         break;
 
@@ -254,7 +256,7 @@ setTimeout(() => {
         setTimeout(() => {
           three.classList.add("clicked");
           btn3Sound.play();
-          setTimeout(() => {three.classList.remove("clicked")}, 500);
+          setTimeout(() => {three.classList.remove("clicked");}, 500);
         }, i*1000);
         break;
 
@@ -262,7 +264,7 @@ setTimeout(() => {
         setTimeout(() => {
           four.classList.add("clicked");
           btn4Sound.play();
-          setTimeout(() => {four.classList.remove("clicked")}, 500);
+          setTimeout(() => {four.classList.remove("clicked");}, 500);
         }, i*1000);
         break;
 
@@ -270,7 +272,7 @@ setTimeout(() => {
 
 
   }
-  setTimeout(() => {waitUserChoice()}, i * 1000);
+  setTimeout(() => {waitUserChoice();}, i * 1000);
 }, 500);
 
   // setTimeout(() => {waitUserChoice()}, 1500);
@@ -287,7 +289,7 @@ function startGame(){ // tied to start.onclick, initiates playGameChoice() after
   levelNumber.innerHTML = level;
   setTimeout(() => {
     playGameChoice();
-  }, 1000)
+  }, 1000);
 }
 
 reset.onclick = resetClicked;

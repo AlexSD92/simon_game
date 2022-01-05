@@ -55,6 +55,8 @@ header{
   font-size: 4rem;
 }
 
+/* parse error here */
+
 #highscores li:nth-child(1)::before{
   content: "🎉";
 }
