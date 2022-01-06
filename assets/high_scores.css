@@ -1,5 +1,3 @@
-/* ↓ high_scores ↓ */
-
 #parentgrid{
   display: grid;
   grid-template-areas:
@@ -55,8 +53,6 @@ header{
   font-size: 4rem;
 }
 
-/* parse error here */
-
 #highscores li:nth-child(1)::before{
   content: "🎉";
 }
@@ -93,5 +89,3 @@ footer{
   grid-area: footer;
   text-align: center;
 }
-
-/* ↑ high_scores ↑ */

@@ -1,5 +1,3 @@
-/* ↓ instructions ↓ */
-
 #parentgrid{
   display: grid;
   grid-template-areas:
@@ -37,24 +35,20 @@ footer{
   font-size: 2rem;
   margin-bottom: 50px;
   display: grid;
-  grid-template-columns: 5vw 1fr 5vw 1fr 5vw;
-  grid-row-gap: 50px;
+  grid-template-columns: 20vw 1fr 5vw 1fr 20vw;
+  grid-row-gap: 100px;
   grid-template-areas:
   ". step1 . step1img ."
-  ". step1p . step1img ."
   ". step2 . step2img ."
-  ". step2p . step2img ."
   ". step3 . step3img ."
-  ". step3p . step3img ."
   ". step4 . step4img ."
-  ". step4p . step4img ."
   ;
 }
 
 #step1{
   grid-area: step1;
   justify-self: left;
-  align-self: end;
+  align-self: center;
   margin: 0;
   padding: 0;
 }
@@ -62,7 +56,7 @@ footer{
 #step2{
   grid-area: step2;
   justify-self: left;
-  align-self: end;
+  align-self: center;
   margin: 0;
   padding: 0;
 }
@@ -70,7 +64,7 @@ footer{
 #step3{
   grid-area: step3;
   justify-self: left;
-  align-self: end;
+  align-self: center;
   margin: 0;
   padding: 0;
 }
@@ -78,39 +72,7 @@ footer{
 #step4{
   grid-area: step4;
   justify-self: left;
-  align-self: end;
-  margin: 0;
-  padding: 0;
-}
-
-#step1p{
-  grid-area: step1p;
-  justify-self: start;
-  align-self: start;
-  margin: 0;
-  padding: 0;
-}
-
-#step2p{
-  grid-area: step2p;
-  justify-self: start;
-  align-self: start;
-  margin: 0;
-  padding: 0;
-}
-
-#step3p{
-  grid-area: step3p;
-  justify-self: start;
-  align-self: start;
-  margin: 0;
-  padding: 0;
-}
-
-#step4p{
-  grid-area: step4p;
-  justify-self: start;
-  align-self: start;
+  align-self: center;
   margin: 0;
   padding: 0;
 }
@@ -120,7 +82,7 @@ footer{
   justify-self: start;
   align-self: center;
   height: auto;
-  width: 70%;
+  width: 100%;
   border-radius: 25px;
   margin: 0;
   padding: 0;
@@ -131,7 +93,7 @@ footer{
   justify-self: start;
   align-self: center;
   height: auto;
-  width: 70%;
+  width: 100%;
   border-radius: 25px;
   margin: 0;
   padding: 0;
@@ -142,7 +104,7 @@ footer{
   justify-self: start;
   align-self: center;
   height: auto;
-  width: 70%;
+  width: 100%;
   border-radius: 25px;
   margin: 0;
   padding: 0;
@@ -153,7 +115,7 @@ footer{
   justify-self:start;
   align-self: center;
   height: auto;
-  width: 70%;
+  width: 100%;
   border-radius: 25px;
   margin: 0;
   padding: 0;
@@ -161,8 +123,68 @@ footer{
 
 /* ↑ instructions ↑ */
 
+@media screen and (max-width: 1600px) {
 
-@media screen and (max-width: 900px) {
+  #step1img{
+    width: 120%;
+  }
+
+  #step2img{
+    width: 120%;
+  }
+
+  #step3img{
+    width: 120%;
+  }
+
+  #step4img{
+    width: 120%;
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+
+  #step1img{
+    width: 140%;
+  }
+
+  #step2img{
+    width: 140%;
+  }
+
+  #step3img{
+    width: 140%;
+  }
+
+  #step4img{
+    width: 140%;
+  }
+
+}
+
+@media screen and (max-width: 1150px) {
+
+  #step1img{
+    width: 160%;
+  }
+
+  #step2img{
+    width: 160%;
+  }
+
+  #step3img{
+    width: 160%;
+  }
+
+  #step4img{
+    width: 160%;
+  }
+
+}
+
+
+@media screen and (max-width: 1000px) {
 
   #instructions{
     display: grid;
@@ -171,16 +193,12 @@ footer{
     grid-template-columns: 3vw 1fr 3vw;
     grid-template-areas:
     ". step1 ."
-    ". step1p ."
     ". step1img ."
     ". step2 ."
-    ". step2p ."
     ". step2img ."
     ". step3 ."
-    ". step3p ."
     ". step3img ."
     ". step4 ."
-    ". step4p ."
     ". step4img ."
     ;
   }
@@ -208,34 +226,6 @@ footer{
 
   #step4{
     grid-area: step4;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-  }
-
-  #step1p{
-    grid-area: step1p;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-  }
-
-  #step2p{
-    grid-area: step2p;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-  }
-
-  #step3p{
-    grid-area: step3p;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-  }
-
-  #step4p{
-    grid-area: step4p;
     justify-self: center;
     align-self: center;
     text-align: center;
