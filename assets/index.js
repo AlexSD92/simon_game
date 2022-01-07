@@ -270,6 +270,7 @@ reset.onclick = resetClicked;
 start.onclick = startClicked;
 
 /* prevents keys from triggering buttons or subitting forms */
+/* https://tutorial.eyehunts.com/js/disable-enter-key-on-an-input-field-in-javascript-example-code/ */
 
 document.addEventListener('keypress', function (e) {
     if (e.keyCode === 13 || e.which === 13) {
