@@ -2,7 +2,7 @@
 
 ## By Alejandro Spara Dominguez
 
-![Example of the application on multiple devices.]()
+![Example of the application on multiple devices.](assets\images\homeAIR.PNG)
 
 #### This project was developed for the second project with the Code Institute and the Full Stack Development course.
 
@@ -47,8 +47,7 @@
 
 1. Anyone wanting to play a digital version of Simon Says.
 2. Anyone looking for a challenging memory game.
-3. Anyone looking to play a different version of Simon Says.
-4. Anyone looking to pass the time or casually play a game.
+3. Anyone looking to pass the time, casually play a game or some nostalgia.
 
 ## User Stories
 
@@ -56,14 +55,16 @@
     1. I would like to play Simon Says.
     2. I would like to play a memory game.
     3. I would like to play a challenging game.
+    4. I would like to learn how to play the game.
 
 - Returning User:
-    1. I would like to try a different game mode.
+    1. I would like to play Simon Says.
     2. I would like to beat my previous score.
+    3. I would like to view my previous scores.
 
 ## Strategy
 
-Design a site with a focused style that does not distract from the Simon Says game. Consistent fonts, feedback sounds and colors will be used throughout the design for a visual appeal and simplicity.
+Design a site with a focused style that does not distract from the Simon Says game. Consistent fonts, feedback sounds and colours will be used throughout the design for a visual appeal and simplicity.
 
 ## Scope
 
@@ -72,19 +73,62 @@ Design a site with a focused style that does not distract from the Simon Says ga
 3. Create different game modes.
 4. Create a scoreboard.
 5. Incorporate cheats, such as being able to skip a level.
-6. Include audiovisual feedback.  
+6. Include audio-visual feedback.  
 
 ## Structure
+
+The website was described with a structure in mind to focus on the gameplay elements, such as the Simon Game itself, high scores and instructions. There are no background images and the font style is kept consistent to not distract from the core elements of the website.
+
+### Header
+
+ - The header will include both a logo and navigation bar.
+ ![Image of the Header Desktop](assets/images/readme/structure/header.png)
+ ![Image of the Header Mobile](assets/images/readme/structure/headermobile.png)
+
+### Simon Game / Simon Controls
+
+- The Simon Game has a start button to initiate the game.
+- After being pressed, the start button disappears and the Simon buttons become the controls.
+- The user can only click the Simon buttons during the user turn.
+![Image of the Simon Buttons](assets/images/readme/structure/simonbuttons.png)
+
+- If the user loses, the game over message will appear.
+- At any point during game over, the user can click reset to reset the game.
+![Image of the Game Over Screen](assets/images/readme/structure/gameoverscreen.png)
+
+- If the user loses, but gets a high score, the high score message will appear along with the option to submit a high score.
+![Image of the High Score Prompt](assets/images/readme/structure/highscoreprompt.png)
+
+- If a high score is submitted, a message thanking the user for their high score will appear.
+![Image of the Score Submitted Message](assets/images/readme/structure/scoresubmittedmessage.png)
+
+### Instructions Page
+
+- The instruction page will contain a heading and description for each key step in the game.
+- Each heading/description will be complemented by a gif animating the instruction as a visual guide.
+![Image of Instructions Page Desktop](assets/images/readme/structure/instructionsstructure.png)  
+![Image of Instructions Page Desktop](assets/images/readme/structure/instructionsstructure.png)  
+
+### High Scores Page
+
+- High scores will be sorted by value first, then alphabetically.
+- High scores will decrease in font size from 1st to 3rd place.
+
+![Image of High Scores](assets/images/readme/structure/highscoresstructure.png)  
+
+### Footer
+
+- Contains fontawesome GitHub that hyperlinks to GitHub.
+- Contains my initials as a signature.
+
+![Image of Footer Desktop](assets/images/readme/structure/footer.png)  
+![Image of Footer Mobile](assets/images/readme/structure/footermobile.png)  
 
 ## Skeleton
 
 ### Wireframes
 
-#### Desktop
-[Home]()
-
-#### Mobile
-[Home]()
+Wireframes for the site can be viewed [here](assets/images/readme/wireframes)
 
 ## surface
 
@@ -93,18 +137,22 @@ Design a site with a focused style that does not distract from the Simon Says ga
 The following color scheme for this site was selected by using [Coolors](https://coolors.co/).
 
 - Header, Footer and Button background colors: #756d54
-- Header, Footer, Button, Heading & Text font: #2E294E
+- Header, Footer, Button, Heading & Text font: #F5F5F5
 - Simon Button colors: #FFBF00, #E83F6F, #2274A5 & #32936f
 
-![Image of the color scheme](assets\images\coolors.png)
+![Image of the Colour Scheme](assets/images/readme/colors/coolors.png)
 
 ### Typography
 
 The following fonts were used from [Google Fonts](https://fonts.google.com/?category=Handwriting&query=permanent):
 - [Indie Flower](https://fonts.google.com/specimen/Indie+Flower?category=Handwriting#standard-styles)
+  - Used in navbar, paragraphs and buttons.
 - [Permanent Marker](https://fonts.google.com/specimen/Permanent+Marker?category=Handwriting&query=permanent)
+  - Use in logo and headings.
 
 ### Images & Icons
+
+[Fontawesome](https://fontawesome.com/) icons were used for the footer of the site to direct users to social media pages.
 
 # Features
 
