@@ -143,7 +143,7 @@ The following color scheme for this site was selected by using [Coolors](https:/
 - Header, Footer, Button, Heading & Text font: #F5F5F5
 - Simon Button colors: #FFBF00, #E83F6F, #2274A5 & #32936f
 
-![Image of the Colour Scheme](assets/images/readme/colors/coolors.png).
+![Image of the Colour Scheme](assets/images/readme/colors/coolors.png)
 
 ### Typography
 
@@ -438,4 +438,4 @@ To develop the project remotely, do the following:
 
 ---
 
-[RETURN TO THE TOP](#Simon-Says)
+[RETURN TO THE TOP](#simon-game)
