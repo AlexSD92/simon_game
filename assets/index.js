@@ -23,6 +23,7 @@ let submittedMsg = document.getElementById("scoresubmitted");
 let form = document.getElementById("enterdetails");
 let name = document.getElementById("namefield");
 const no_of_scores = 3;
+let i;
 
 // https://stackoverflow.com/questions/43762363/how-to-store-an-array-of-objects-in-local-storage
 
