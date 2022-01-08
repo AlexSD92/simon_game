@@ -22,9 +22,9 @@
    6. [Skeleton](#skeleton)
       1. [Wireframes](#wireframes)
    7. [Surface](#surface)
-      1. [Colours](#colours)
+      1. [Colours](#colors)
       2. [Typography](#typography)
-      3. [Images & Icons](#images-&-icons)
+      3. [Images and Icons](#images-and-icons)
       4. [Sounds](#sounds)
 3. [Features](#features)
    1. [Current Features](#current-features)
@@ -33,12 +33,12 @@
 5. [Testing](#testing)
    1. [Code Tests](#code-tests)
    2. [User Tests](#user-tests)
-   3. [Bugs & Fixes](#bugs-&-fixes)
+   3. [Bugs and Fixes](#bugs-and-fixes)
    4. [Observations](#observations)
 6. [Deployment](#deployment)
    1. [GitHub Pages](#github-pages)
-   2. [Forking Repository](#forking-the-github-repository)
-   3. [Cloning the project](#cloning-the-project)
+   2. [Cloning and Forking the GitHub Repository](#cloning-and-forking-the-github-repository)
+   3. [Local Deployment](#local-deployment)
 7. [Credits](#credits)
 8. [To Do](#To-Do)
 
@@ -155,7 +155,7 @@ The following fonts were used from [Google Fonts](https://fonts.google.com/?cate
 - [Permanent Marker](https://fonts.google.com/specimen/Permanent+Marker?category=Handwriting&query=permanent)
   - Use in logo and headings.
 
-### Images & Icons
+### Images and Icons
 
 [Fontawesome](https://fontawesome.com/) icons were used for the footer of the site to direct users to social media pages.
 
@@ -246,7 +246,7 @@ All of the edited sounds that were used for this project can be found [here](ass
     3. I would like to view my previous scores.
       - User clicks the High Score link on the navigation menu and views their high scores.
 
-## Bugs & Fixes
+## Bugs and Fixes
 
 - 15/12/2021 - Bug identified where repeating objects in playGameChoice weren't animating correctly. This was fixed by adjusting the setTimeout to i*1000 to create delay in the iteration of the gameChoice array.
 
@@ -282,7 +282,7 @@ In order to deploy on GitHub pages, you must:
 8. A URL will be generated for your site.
 9. Process complete.
 
-## Cloning & Forking The GitHub Repository
+## Cloning and Forking the GitHub Repository
 
 In order to make changes to this code without affecting the original code, you must fork the repository. This means that you will be given a copy of the code for that moment in time. In order to do this, you must:
 
@@ -311,12 +311,12 @@ In order to clone the code you must:
 
 1. Download and open [GitBash](https://gitforwindows.org/) terminal.
 2. Navigate to the directory where you would like to create a new directory.
-  - Use the pwd command to know where you currently are.
-  - Use cd followed by the directory name to change directories.
+    - Use the pwd command to know where you currently are.
+    - Use cd followed by the directory name to change directories.
 3. Create a new directory (mkdir) named 'simon_game'.
 4. Set your username and email configuration.
-  - git config --global user.name "FIRST_NAME LAST_NAME"
-  - git config --global user.email "MY_NAME@example.com"
+    - git config --global user.name "FIRST_NAME LAST_NAME"
+    - git config --global user.email "MY_NAME@example.com"
 5. Create a GitHub account (if you have one already, skip this step).
 6. Create a repository on GitHub and give it a suitable name.
 7. After creating your repository, navigate to the code dropdown and copy the HTTPS link.
