@@ -85,47 +85,47 @@ The website was described with a structure in mind to focus on the gameplay elem
 ### Header
 
  - The header will include both a logo and navigation bar.
- ![Image of the Header Desktop](assets/images/readme/structure/header.png)
- ![Image of the Header Mobile](assets/images/readme/structure/headermobile.png)
+ ![Image of the Header Desktop](assets/images/readme/structure/header.PNG)
+ ![Image of the Header Mobile](assets/images/readme/structure/headermobile.PNG)
 
 ### Simon Game / Simon Controls
 
 - The Simon Game has a start button to initiate the game.
 - After being pressed, the start button disappears and the Simon buttons become the controls.
 - The user can only click the Simon buttons during the user turn.
-![Image of the Simon Buttons](assets/images/readme/structure/simonbuttons.png)
+![Image of the Simon Buttons](assets/images/readme/structure/simonbuttons.PNG)
 
 - If the user loses, the game over message will appear.
 - At any point during game over, the user can click reset to reset the game.
-![Image of the Game Over Screen](assets/images/readme/structure/gameoverscreen.png)
+![Image of the Game Over Screen](assets/images/readme/structure/gameoverscreen.PNG)
 
 - If the user loses, but gets a high score, the high score message will appear along with the option to submit a high score.
-![Image of the High Score Prompt](assets/images/readme/structure/highscoreprompt.png)
+![Image of the High Score Prompt](assets/images/readme/structure/highscoreprompt.PNG)
 
 - If a high score is submitted, a message thanking the user for their high score will appear.
-![Image of the Score Submitted Message](assets/images/readme/structure/scoresubmittedmessage.png)
+![Image of the Score Submitted Message](assets/images/readme/structure/scoresubmittedmessage.PNG)
 
 ### Instructions Page
 
 - The instruction page will contain a heading and description for each key step in the game.
 - Each heading/description will be complemented by a gif animating the instruction as a visual guide.
-![Image of Instructions Page Desktop](assets/images/readme/structure/instructionsstructure.png)  
-![Image of Instructions Page Desktop](assets/images/readme/structure/instructionsstructure.png)  
+![Image of Instructions Page Desktop](assets/images/readme/structure/instructionsstructure.PNG)  
+![Image of Instructions Page Desktop](assets/images/readme/structure/instructionsstructure.PNG)  
 
 ### High Scores Page
 
 - High scores will be sorted by value first, then alphabetically.
 - High scores will decrease in font size from 1st to 3rd place.
 
-![Image of High Scores](assets/images/readme/structure/highscoresstructure.png)  
+![Image of High Scores](assets/images/readme/structure/highscoresstructure.PNG)  
 
 ### Footer
 
 - Contains fontawesome GitHub that hyperlinks to GitHub.
 - Contains my initials as a signature.
 
-![Image of Footer Desktop](assets/images/readme/structure/footer.png)  
-![Image of Footer Mobile](assets/images/readme/structure/footermobile.png)  
+![Image of Footer Desktop](assets/images/readme/structure/footer.PNG)  
+![Image of Footer Mobile](assets/images/readme/structure/footermobile.PNG)  
 
 ## Skeleton
 
@@ -143,7 +143,7 @@ The following color scheme for this site was selected by using [Coolors](https:/
 - Header, Footer, Button, Heading & Text font: #F5F5F5
 - Simon Button colors: #FFBF00, #E83F6F, #2274A5 & #32936f
 
-![Image of the Colour Scheme](assets/images/readme/colors/coolors.png)
+![Image of the Colour Scheme](assets/images/readme/colors/coolors.PNG)
 
 ### Typography
 
