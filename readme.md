@@ -131,9 +131,9 @@ The website was described with a structure in mind to focus on the gameplay elem
 
 ### Wireframes
 
-Wireframes for the site can be viewed [here](assets/images/readme/wireframes)
+Wireframes for the site can be viewed [here](assets/images/readme/wireframes).
 
-## surface
+## Surface
 
 ### Colors
 
@@ -143,13 +143,15 @@ The following color scheme for this site was selected by using [Coolors](https:/
 - Header, Footer, Button, Heading & Text font: #F5F5F5
 - Simon Button colors: #FFBF00, #E83F6F, #2274A5 & #32936f
 
-![Image of the Colour Scheme](assets/images/readme/colors/coolors.PNG)
+![Image of the Colour Scheme](assets/images/readme/colors/coolors.png).
 
 ### Typography
 
 The following fonts were used from [Google Fonts](https://fonts.google.com/?category=Handwriting&query=permanent):
+
 - [Indie Flower](https://fonts.google.com/specimen/Indie+Flower?category=Handwriting#standard-styles)
   - Used in navbar, paragraphs and buttons.
+
 - [Permanent Marker](https://fonts.google.com/specimen/Permanent+Marker?category=Handwriting&query=permanent)
   - Use in logo and headings.
 
@@ -280,22 +282,47 @@ In order to deploy on GitHub pages, you must:
 
 ## Cloning & Forking The GitHub Repository
 
-## Local Deployment
+In order to make changes to this code without affecting the original code, you must fork the repository. This means that you will be given a copy of the code for that moment in time. In order to do this, you must:
+
+1. Create a GitHub account (if you have one already, skip this step).
+2. Navigate to the [repository](https://github.com/AlexSD92/laughing-broccoli#GitHub-Pages).
+3. Near the top right, click 'Fork'.
+4. A copy of the repository will be available for you to use within your own remote repositories.
+
+In order to clone the code you must:
 
 1. Create a GitHub account (if you have one already, skip this step).
 2. Navigate to the [repository](https://github.com/AlexSD92/laughing-broccoli#GitHub-Pages) you would like to clone.
 3. Near the top, select 'Code' in the dropdown.
 4. Copy the HTTPS address.
-5. Download and open open [GitBash](https://gitforwindows.org/) terminal.
-6. Navigate to the directory where you would like to create a new directory.
+5. Open Gitpod.
+6. Navigate to the directory where you would like to create a new directory using the terminal.
     - Use the pwd command to know where you currently are.
     - Use cd followed by the directory name to change directories.
     - use mkdir followed by a new directory name to create a new directory.
 7. Create a new directory (mkdir) named 'CKC Lifts'.
-8. Change directory (cd) into 'CKC Lifts'.
+8. Change directory (cd) in to 'CKC Lifts'.
 9. Enter 'git clone [insert HTTPS address here]'.
-10. GitBash will clone the 'CKC Lifts' repository in to your chosen local directory.
-11. Open the repository using your preferred IDE, such as [Atom](https://atom.io/), [Visual Studio](https://code.visualstudio.com/), etc.
+10. GitBash will clone the 'CKC Lifts' repository in to your chosen directory.
+
+## Local Deployment
+
+1. Download and open [GitBash](https://gitforwindows.org/) terminal.
+2. Navigate to the directory where you would like to create a new directory.
+  - Use the pwd command to know where you currently are.
+  - Use cd followed by the directory name to change directories.
+3. Create a new directory (mkdir) named 'simon_game'.
+4. Set your username and email configuration.
+  - git config --global user.name "FIRST_NAME LAST_NAME"
+  - git config --global user.email "MY_NAME@example.com"
+5. Create a GitHub account (if you have one already, skip this step).
+6. Create a repository on GitHub and give it a suitable name.
+7. After creating your repository, navigate to the code dropdown and copy the HTTPS link.
+8. On GitBash, initialise the local directory you created (simon_game) as a Git repository by using git init, use git add . to stage all files and then make your first commit using git commit -m "first commit".
+9. Add the URL for your repository where your local repository will be  pushed via git remote add origin (ADD YOUR URL HERE).
+10. Push the changes in your local repository to GitHub using git push origin master.
+11. From here on out you can use git add to add individual files and git commit and git push to add, commit and push files to your repository, respectively.
+12. Open the repository using your preferred IDE, such as [Atom](https://atom.io/), [Visual Studio](https://code.visualstudio.com/), etc.
 
 # Credits
 
