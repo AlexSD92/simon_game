@@ -31,7 +31,7 @@
     2. [Future Features](#future-features)
 4. [Technologies](#technologies)
     1. [Languages](#languages)
-    2. [Other Technologies, Frameworks and Libraries](#other-technologies,-frameworks-and-libraries)
+    2. [Other Technologies, Frameworks and Libraries](#other-technologies-frameworks-and-libraries)
 5. [Testing](#testing)
     1. [Code Tests](#code-tests)
     2. [User Tests](#user-tests)
@@ -270,6 +270,24 @@ Metrics:
 - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
 
 ### [Chrome Dev Tools - Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+
+#### Desktop
+
+| Metric | Home Page | Instructions | High Scores |
+| --- | :---: | :---: | :---: |
+| Performance | 100 | 100 | 100 |
+| Accessibility | 96 | 95 | 94 |
+| Best Practices | 100 | 100 | 100 |
+| SEO | 89 | 90 | 89 |
+
+#### Mobile
+
+| Metric | Home Page | Instructions | High Scores |
+| :---: | :---: | :---: | :---: |
+| Performance | 99 | 99 | 99 |
+| Accessibility | 96 | 95 | 94 |
+| Best Practices | 100 | 100 | 100 |
+| SEO | 91 | 92 | 91 |
 
 ## User Tests
 
