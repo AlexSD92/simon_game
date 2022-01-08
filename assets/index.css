@@ -94,6 +94,7 @@ footer{
   grid-area: btn1;
   justify-self: right;
   align-self: end;
+  color: transparent;
 }
 
 #greenbutton{
@@ -102,6 +103,7 @@ footer{
   grid-area: btn2;
   justify-self: left;
   align-self: end;
+  color: transparent;
 }
 
 #bluebutton{
@@ -110,6 +112,7 @@ footer{
   grid-area: btn3;
   justify-self: right;
   align-self: start;
+  color: transparent;
 }
 
 #yellowbutton{
@@ -118,6 +121,7 @@ footer{
   grid-area: btn4;
   justify-self: left;
   align-self: start;
+  color: transparent;
 }
 
 #gameover{
