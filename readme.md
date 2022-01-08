@@ -118,14 +118,12 @@ The website was described with a structure in mind to focus on the gameplay elem
 
 - High scores will be sorted by value first, then alphabetically.
 - High scores will decrease in font size from 1st to 3rd place.
-
 ![Image of High Scores](assets/images/readme/structure/highscoresstructure.PNG)  
 
 ### Footer
 
 - Contains fontawesome GitHub that hyperlinks to GitHub.
 - Contains my initials as a signature.
-
 ![Image of Footer Desktop](assets/images/readme/structure/footer.PNG)  
 ![Image of Footer Mobile](assets/images/readme/structure/footermobile.PNG)  
 
@@ -152,10 +150,10 @@ The following color scheme for this site was selected by using [Coolors](https:/
 The following fonts were used from [Google Fonts](https://fonts.google.com/?category=Handwriting&query=permanent):
 
 - [Indie Flower](https://fonts.google.com/specimen/Indie+Flower?category=Handwriting#standard-styles)
-  - Used in navbar, paragraphs and buttons.
+    - Used in navbar, paragraphs and buttons.
 
 - [Permanent Marker](https://fonts.google.com/specimen/Permanent+Marker?category=Handwriting&query=permanent)
-  - Use in logo and headings.
+    - Use in logo and headings.
 
 ### Images and Icons
 
@@ -192,24 +190,32 @@ All of the edited sounds that were used for this project can be found [here](ass
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-## Other Technologies, Frameworks & Libraries
+## Other Technologies, Frameworks and Libraries
 
 - [Audacity](https://www.audacityteam.org/)
     - To edit sound files.
+
 - [Google Fonts](https://fonts.google.com/)
     - Used for importing fonts, allowing for the fonts to be available for all users.
+
 - [Font Awesome](https://fontawesome.com/)
     - Font Awesome provides all the icons used for the site.
+
 - [Git & GitBash](https://gitforwindows.org/)
     - Git for Windows provides a BASH emulation which allows for git to be used straight from the command line.
+
 - [GitHub](https://github.com/)
     - Provided a Remote repository for the application. Allowing for my coding to be backed up online as I go.
+
 - [Atom](https://atom.io/)
     - Development environment used to develop the code for this project.
+
 - [Coolors](https://coolors.co/)
     - To select a colour pallet for site design.
+
 - [Material Design Colour Tool](https://material.io/)
     - To select font colours to improve site accessibility.
+
 - [Balsamiq](https://balsamiq.com/)
     - To create the wireframes for this site.
 
@@ -222,7 +228,9 @@ All of the edited sounds that were used for this project can be found [here](ass
 No errors or warnings found.
 
 - [Home Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Falexsd92.github.io%2Fsimon_game%2Findex.html)
+
 - [Instructions Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Falexsd92.github.io%2Fsimon_game%2Finstructions.html)
+
 - [High Scores Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Falexsd92.github.io%2Fsimon_game%2Fhigh_scores.html)
 
 ### [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
@@ -230,8 +238,11 @@ No errors or warnings found.
 No errors or warnings found.
 
 - [Home Page](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Falexsd92.github.io%2Fsimon_game%2Fassets%2Findex.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
 - [Instructions Page](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Falexsd92.github.io%2Fsimon_game%2Fassets%2Finstructions.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
 - [High Scores Page](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Falexsd92.github.io%2Fsimon_game%2Fassets%2Fhigh_scores.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
 - [Global Style](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Falexsd92.github.io%2Fsimon_game%2Fassets%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### [JS HINT](https://jshint.com/)
@@ -239,16 +250,23 @@ No errors or warnings found.
 No errors, but 5 warnings:
 
 1. Line 24, Redefinition of 'name'.
+
 2. Line 220, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (one, btn1Sound)
+
 3. Line 228, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (two, btn2Sound)
+
 4. Line 236, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (three, btn3Sound)
+
 5. Line 244, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (four, btn4Sound)
 
 Metrics:
 
 - There are 30 functions in this file.
+
 - Function with the largest signature take 2 arguments, while the median is 0.
+
 - Largest function has 17 statements in it, while the median is 3.
+
 - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
 
 ### [Chrome Dev Tools - Lighthouse](https://developers.google.com/web/tools/lighthouse/)
@@ -256,6 +274,7 @@ Metrics:
 ## User Tests
 
 - First time user:
+
     1. I would like to play Simon Says / I would like to play a memory game.
       - User arrives at the 'Home' page and sees the game buttons followed by the start button. User clicks the start button and the game begins indicating that it is Simon's turn. Once Simon's turn is complete, the game indicates that it is the user's turn.
     2. I would like to play a challenging game.
@@ -264,6 +283,7 @@ Metrics:
       - User navigates to the 'Instructions' page and views the instructions for how to play the game.
 
 - Returning User:
+
     1. I would like to play Simon Says.
       - User arrives at the 'Home' page and sees the game buttons followed by the start button. User clicks the start button and the game begins indicating that it is Simon's turn. Once Simon's turn is complete, the game indicates that it is the user's turn.
     2. I would like to beat my previous score.
