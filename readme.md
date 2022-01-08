@@ -193,6 +193,7 @@ All of the edited sounds that were used for this project can be found [here](ass
 ## Other Technologies, Frameworks & Libraries
 
 - [Audacity](https://www.audacityteam.org/)
+    - To edit sound files.
 - [Google Fonts](https://fonts.google.com/)
     - Used for importing fonts, allowing for the fonts to be available for all users.
 - [Font Awesome](https://fontawesome.com/)
@@ -215,17 +216,31 @@ All of the edited sounds that were used for this project can be found [here](ass
 ## Code Tests
 
 ### [HTML Validator](https://validator.w3.org/)
+
+No errors or warnings found.
+
 - [Home Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Falexsd92.github.io%2Fsimon_game%2Findex.html)
 - [Instructions Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Falexsd92.github.io%2Fsimon_game%2Finstructions.html)
 - [High Scores Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Falexsd92.github.io%2Fsimon_game%2Fhigh_scores.html)
 
 ### [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+No errors or warnings found.
+
 - [Home Page](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Falexsd92.github.io%2Fsimon_game%2Fassets%2Findex.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - [Instructions Page](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Falexsd92.github.io%2Fsimon_game%2Fassets%2Finstructions.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - [High Scores Page](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Falexsd92.github.io%2Fsimon_game%2Fassets%2Fhigh_scores.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - [Global Style](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Falexsd92.github.io%2Fsimon_game%2Fassets%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### [JS HINT](https://jshint.com/)
+
+No errors, but 5 warnings:
+
+1. Line 24, Redefinition of 'name'.
+2. Line 220, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (one, btn1Sound)
+3. Line 228, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (two, btn2Sound)
+4. Line 236, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (three, btn3Sound)
+5. Line 244, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (four, btn4Sound)
 
 ### [Chrome Dev Tools - Lighthouse](https://developers.google.com/web/tools/lighthouse/)
 
