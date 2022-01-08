@@ -2,7 +2,7 @@
 
 ## By Alejandro Spara Dominguez
 
-![Example of the application on multiple devices.](assets\images\homeAIR.PNG)
+![Example of the application on multiple devices.](assets/images/readme/amiresponsive/homeAIR.PNG)
 
 #### This project was developed for the second project with the Code Institute and the Full Stack Development course.
 
