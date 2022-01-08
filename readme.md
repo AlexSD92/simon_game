@@ -332,29 +332,39 @@ In order to clone the code you must:
 
 ## Local Deployment
 
+To develop your project locally, do the following:
+
 1. Download and open [GitBash](https://gitforwindows.org/) terminal.
 2. Create a GitHub account if you don't have one already.
-2. Create your repository by clicking on to repositories and then clicking new.
-2. Copy the HTTPS link, you will need this for step ____
-2. If you have never used GitBash before, you will need to log in to GitHub.
+3. Create your repository by clicking on to repositories and then clicking new.
+4. Copy the HTTPS link, you will need this for step 9.
+5. If you have never used GitBash before, you will need to log in to GitHub.
     - Use 'git config --global credential.helper wincred' to prompt login to GitHub (you should only have to do this once per pc/install).
-2. Navigate to the directory where you would like to create a new directory.
+6. Navigate to the directory where you would like to create a new directory.
     - Use the pwd command to know where you currently are.
     - Use cd followed by the directory name to change directories.
-3. Create a new directory (mkdir) named 'simon_game'.
-2. Initialise the directory that has been created by using 'git init'.
+7. Create a new directory (mkdir) named 'simon_game'.
+8. Initialise the directory that has been created by using 'git init'.
     - Create your first files by using the touch command.
     - 'git status' to view which files have not been staged.
     - 'git add .' to track all new files / files with changes.
     - 'git commit -m "your commit message here"' to commit your staged files.
-2. 'git remote add origin "INSERT HTTPS LINK HERE"' to link to the GitHub repository you created.
-2. 'git push --set-upstream origin master' to set the origin master permanently.
+9. 'git remote add origin "INSERT HTTPS LINK HERE"' to link to the GitHub repository you created.
+10. 'git push --set-upstream origin master' to set the origin master permanently.
     - You will only have to do this once and from here on out you can use 'git push' to push your commits to your GitHub repository.
-2. Open your local repository using your preferred IDE, such as [Atom](https://atom.io/), [Visual Studio](https://code.visualstudio.com/), etc.
+11. Open your local repository using your preferred IDE, such as [Atom](https://atom.io/), [Visual Studio](https://code.visualstudio.com/), etc.
+12. Happy coding.
 
 ## Remote Deployment
 
+To develop the project remotely, do the following:
 
+1. Create a GitHub account if you don't have one already.
+2. Create your repository by clicking on to repositories and then clicking new.
+3. Download the [Gitpod](https://chrome.google.com/webstore/detail/gitpod-always-ready-to-co/dodmmooeoklaejobgleioelladacbeki) extension (you can log in using GitHub).
+4. Once the Gitpod extension is installed, refresh GitHub.
+5. Click the green 'Gitpod' button to launch the development environment.
+6. Happy coding.
 
 # Credits
 
