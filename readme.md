@@ -110,7 +110,7 @@ The website was described with a structure in mind to focus on the gameplay elem
 - The instruction page will contain a heading and description for each key step in the game.
 - Each heading/description will be complemented by a gif animating the instruction as a visual guide.
 ![Image of Instructions Page Desktop](assets/images/readme/structure/instructionsstructure.PNG)  
-![Image of Instructions Page Desktop](assets/images/readme/structure/instructionsstructure.PNG)  
+![Image of Instructions Page Mobile](assets/images/readme/structure/instructionsmobilestructure.PNG)  
 
 ### High Scores Page
 
@@ -159,9 +159,11 @@ The following fonts were used from [Google Fonts](https://fonts.google.com/?cate
 
 [Fontawesome](https://fontawesome.com/) icons were used for the footer of the site to direct users to social media pages.
 
-### sounds
+### Sounds
 
 [Freesound - Simon](https://freesound.org/people/Timbre/sounds/171398/) sounds were used for the audio feedback of the controls in the game.
+
+All of the edited sounds that were used for this project can be found [here](assets/sounds).
 
 # Features
 
