@@ -39,6 +39,7 @@
    1. [GitHub Pages](#github-pages)
    2. [Cloning and Forking the GitHub Repository](#cloning-and-forking-the-github-repository)
    3. [Local Deployment](#local-deployment)
+   4. [Remote Deployment](#remote-deployment)
 7. [Credits](#credits)
 8. [To Do](#To-Do)
 
@@ -242,6 +243,13 @@ No errors, but 5 warnings:
 4. Line 236, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (three, btn3Sound)
 5. Line 244, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (four, btn4Sound)
 
+Metrics:
+
+- There are 30 functions in this file.
+- Function with the largest signature take 2 arguments, while the median is 0.
+- Largest function has 17 statements in it, while the median is 3.
+- The most complex function has a cyclomatic complexity value of 8 while the median is 1.
+
 ### [Chrome Dev Tools - Lighthouse](https://developers.google.com/web/tools/lighthouse/)
 
 ## User Tests
@@ -303,44 +311,50 @@ In order to deploy on GitHub pages, you must:
 In order to make changes to this code without affecting the original code, you must fork the repository. This means that you will be given a copy of the code for that moment in time. In order to do this, you must:
 
 1. Create a GitHub account (if you have one already, skip this step).
-2. Navigate to the [repository](https://github.com/AlexSD92/laughing-broccoli#GitHub-Pages).
+2. Navigate to the [repository](https://github.com/AlexSD92/simon_game).
 3. Near the top right, click 'Fork'.
 4. A copy of the repository will be available for you to use within your own remote repositories.
 
 In order to clone the code you must:
 
 1. Create a GitHub account (if you have one already, skip this step).
-2. Navigate to the [repository](https://github.com/AlexSD92/laughing-broccoli#GitHub-Pages) you would like to clone.
+2. Navigate to the [repository](https://github.com/AlexSD92/simon_game) you would like to clone.
 3. Near the top, select 'Code' in the dropdown.
 4. Copy the HTTPS address.
-5. Open Gitpod.
-6. Navigate to the directory where you would like to create a new directory using the terminal.
+5. Navigate to the directory where you would like to create a new directory using the terminal.
     - Use the pwd command to know where you currently are.
     - Use cd followed by the directory name to change directories.
     - use mkdir followed by a new directory name to create a new directory.
-7. Create a new directory (mkdir) named 'CKC Lifts'.
-8. Change directory (cd) in to 'CKC Lifts'.
-9. Enter 'git clone [insert HTTPS address here]'.
-10. GitBash will clone the 'CKC Lifts' repository in to your chosen directory.
+6. Create a new directory (mkdir) named 'simon_game'.
+7. Change directory (cd) in to 'simon_game'.
+8. Enter 'git clone https://github.com/AlexSD92/simon_game.git'.
+9. GitBash will clone the 'simon_game' repository in to your chosen directory.
 
 ## Local Deployment
 
 1. Download and open [GitBash](https://gitforwindows.org/) terminal.
+2. Create a GitHub account if you don't have one already.
+2. Create your repository by clicking on to repositories and then clicking new.
+2. Copy the HTTPS link, you will need this for step ____
+2. If you have never used GitBash before, you will need to log in to GitHub.
+    - Use 'git config --global credential.helper wincred' to prompt login to GitHub (you should only have to do this once per pc/install).
 2. Navigate to the directory where you would like to create a new directory.
     - Use the pwd command to know where you currently are.
     - Use cd followed by the directory name to change directories.
 3. Create a new directory (mkdir) named 'simon_game'.
-4. Set your username and email configuration.
-    - git config --global user.name "FIRST_NAME LAST_NAME"
-    - git config --global user.email "MY_NAME@example.com"
-5. Create a GitHub account (if you have one already, skip this step).
-6. Create a repository on GitHub and give it a suitable name.
-7. After creating your repository, navigate to the code dropdown and copy the HTTPS link.
-8. On GitBash, initialise the local directory you created (simon_game) as a Git repository by using git init, use git add . to stage all files and then make your first commit using git commit -m "first commit".
-9. Add the URL for your repository where your local repository will be  pushed via git remote add origin (ADD YOUR URL HERE).
-10. Push the changes in your local repository to GitHub using git push origin master.
-11. From here on out you can use git add to add individual files and git commit and git push to add, commit and push files to your repository, respectively.
-12. Open the repository using your preferred IDE, such as [Atom](https://atom.io/), [Visual Studio](https://code.visualstudio.com/), etc.
+2. Initialise the directory that has been created by using 'git init'.
+    - Create your first files by using the touch command.
+    - 'git status' to view which files have not been staged.
+    - 'git add .' to track all new files / files with changes.
+    - 'git commit -m "your commit message here"' to commit your staged files.
+2. 'git remote add origin "INSERT HTTPS LINK HERE"' to link to the GitHub repository you created.
+2. 'git push --set-upstream origin master' to set the origin master permanently.
+    - You will only have to do this once and from here on out you can use 'git push' to push your commits to your GitHub repository.
+2. Open your local repository using your preferred IDE, such as [Atom](https://atom.io/), [Visual Studio](https://code.visualstudio.com/), etc.
+
+## Remote Deployment
+
+
 
 # Credits
 
@@ -365,8 +379,10 @@ In order to clone the code you must:
     - [Freesound - Simon](https://freesound.org/people/Timbre/sounds/171398/)
 
 7. [Coolors](https://coolors.co/)
+    - Great too for selecting a color pallet and complementary colors.
 
 8. [Screen to GIF](https://www.screentogif.com/)
+    - User-friendly screen recording software to create gifs.
 
 9. Chris Quinn, Mentor
     - Excellent resource and a wealth of knowledge and insight. Lessons around CSS grid really added some invaluable knowledge and experience to my project.
