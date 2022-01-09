@@ -247,17 +247,19 @@ No errors or warnings found.
 
 ### [JS HINT](https://jshint.com/)
 
+#### index.js
+
 No errors, but 5 warnings:
 
 1. Line 24, Redefinition of 'name'.
 
-2. Line 220, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (one, btn1Sound)
+2. Line 219, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (one, btn1Sound)
 
-3. Line 228, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (two, btn2Sound)
+3. Line 227, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (two, btn2Sound)
 
-4. Line 236, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (three, btn3Sound)
+4. Line 235, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (three, btn3Sound)
 
-5. Line 244, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (four, btn4Sound)
+5. Line 243, Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (four, btn4Sound)
 
 Metrics:
 
@@ -268,6 +270,20 @@ Metrics:
 - Largest function has 17 statements in it, while the median is 3.
 
 - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
+
+#### high_scores.js
+
+No errors.
+
+Metrics:
+
+- There is only one function in this file.
+
+- It takes one argument.
+
+- This function is empty.
+
+- Cyclomatic complexity number for this function is 1.
 
 ### [Chrome Dev Tools - Lighthouse](https://developers.google.com/web/tools/lighthouse/)
 
