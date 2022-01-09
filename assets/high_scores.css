@@ -89,3 +89,18 @@ footer{
   grid-area: footer;
   text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+
+  #highscores li:nth-child(1){
+    font-size: 3rem;
+  }
+  #highscores li:nth-child(2){
+    font-size: 2rem;
+  }
+  #highscores li:nth-child(3){
+    font-size: 1rem;
+  }
+
+
+}
