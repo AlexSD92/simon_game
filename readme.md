@@ -428,7 +428,7 @@ To develop the project remotely, do the following:
     - [Freesound - Simon](https://freesound.org/people/Timbre/sounds/171398/)
 
 7. [Coolors](https://coolors.co/)
-    - Great too for selecting a color pallet and complementary colors.
+    - Great tool for selecting a color pallet and complementary colors.
 
 8. [Screen to GIF](https://www.screentogif.com/)
     - User-friendly screen recording software to create gifs.
