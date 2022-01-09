@@ -50,7 +50,8 @@ header{
 }
 
 #highscores li:nth-child(1){
-  font-size: 4rem;
+  font-size: 5vw;
+  white-space: nowrap;
 }
 
 #highscores li:nth-child(1)::before{
@@ -62,7 +63,8 @@ header{
 }
 
 #highscores li:nth-child(2){
-  font-size: 3rem;
+  font-size: 2.5vw;
+  white-space: nowrap;
 }
 
 #highscores li:nth-child(2)::before{
@@ -74,7 +76,8 @@ header{
 }
 
 #highscores li:nth-child(3){
-  font-size: 2rem;
+  font-size: 1.75vw;
+  white-space: nowrap;
 }
 
 #highscores li:nth-child(3)::before{
@@ -90,17 +93,44 @@ footer{
   text-align: center;
 }
 
+@media screen and (max-width: 1000px) {
+
+  #highscores li:nth-child(1){
+    font-size: 7.5vw;
+  }
+  #highscores li:nth-child(2){
+    font-size: 3.75vw;
+  }
+  #highscores li:nth-child(3){
+    font-size: 1.875vw;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  #highscores li:nth-child(1){
+    font-size: 10vw;
+  }
+  #highscores li:nth-child(2){
+    font-size: 5vw;
+  }
+  #highscores li:nth-child(3){
+    font-size: 2.5vw;
+  }
+
+}
+
 @media screen and (max-width: 600px) {
 
   #highscores li:nth-child(1){
-    font-size: 3rem;
+    font-size: 12vw;
   }
   #highscores li:nth-child(2){
-    font-size: 2rem;
+    font-size: 6vw;
   }
   #highscores li:nth-child(3){
-    font-size: 1rem;
+    font-size: 3vw;
   }
-
 
 }
