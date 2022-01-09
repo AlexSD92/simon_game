@@ -25,11 +25,10 @@ let name = document.getElementById("namefield");
 const no_of_scores = 3;
 let i;
 
-// https://stackoverflow.com/questions/43762363/how-to-store-an-array-of-objects-in-local-storage
-
-
 // https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68=
 // https://stackoverflow.com/questions/17087636/how-to-save-data-from-a-form-with-html5-local-storage
+// https://stackoverflow.com/questions/43762363/how-to-store-an-array-of-objects-in-local-storage
+// https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage
 
 /* checks whether the score achieved is greater than the lowest score in localstorage, if it is, the form is displayed to take the score, on click pushScore is activated
 pushScore takes the name from the form field, the score achieved and pushes it in to scoreList locally */
@@ -37,6 +36,9 @@ pushScore takes the name from the form field, the score achieved and pushes it i
 function checkScores(){
 
   function pushScore(){
+
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+    // https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value
 
     levelHeader.classList.add("hidden");
     submittedMsg.classList.remove("hidden");
@@ -60,10 +62,6 @@ function checkScores(){
   }
 
 }
-
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-// https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value
-// https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage
 
 /* generates random number between 1 and 4 and pushes it to gameChoice array */
 
@@ -271,7 +269,7 @@ reset.onclick = resetClicked;
 start.onclick = startClicked;
 
 /* prevents keys from triggering buttons or subitting forms */
-/* https://tutorial.eyehunts.com/js/disable-enter-key-on-an-input-field-in-javascript-example-code/ */
+// https://tutorial.eyehunts.com/js/disable-enter-key-on-an-input-field-in-javascript-example-code/
 
 document.addEventListener('keypress', function (e) {
     if (e.keyCode === 13 || e.which === 13) {
